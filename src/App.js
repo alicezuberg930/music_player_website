@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import PublicPage from './pages/PublicPage';
+import { paths } from './utils/global_paths';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getHomeAction } from './store/actions/get_home';
+import PlaylistPage from "./pages/PlaylistPage";
+import WeekRankPage from "./pages/WeekRankPage";
+import ZingChartPage from "./pages/ZingChartPage";
 
 function App() {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getHomeAction())
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path={paths.PUBLIC} element={<PublicPage />} >
+        <Route path={paths.HOME} element={<HomePage />} />
+        <Route path={paths.LOGIN} element={<LoginPage />} />
+        <Route path={paths.PLAYLIST__TITLE__ID} element={<PlaylistPage />} />
+        <Route path={paths.ALBUM__TITLE__ID} element={<PlaylistPage />} />
+        <Route path={paths.WEEKRANK__TITLE__ID} element={<WeekRankPage />} />
+        <Route path={paths.ZING_CHART} element={<ZingChartPage />} />
+      </Route>
+    </Routes>
   );
 }
 
