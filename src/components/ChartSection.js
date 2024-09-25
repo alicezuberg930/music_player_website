@@ -92,7 +92,7 @@ const ChartSection = () => {
     }, [chart])
 
     return (
-        <div className="mt-12 relative w-full h-[420px]">
+        <div className="mt-12 relative w-full lg:h-[420px] h-[760px]">
             <div className="z-10 absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-t from-[#33104cf2] to-[#33104cf2] rounded-lg"></div>
             <div className="z-20 absolute top-0 bottom-0 left-0 right-0 p-5 flex flex-col gap-4">
                 <Link to={paths.ZING_CHART} className="flex gap-2 items-center">
@@ -101,7 +101,7 @@ const ChartSection = () => {
                         <BsPlayFill color="green" size={20} />
                     </span>
                 </Link>
-                <div className="flex gap-4 h-full">
+                <div className="flex lg:flex-row flex-col gap-4 h-full">
                     <div className="flex-3 flex flex-col gap-3">
                         {
                             ranks?.slice(0, 3).map((song, index) => {

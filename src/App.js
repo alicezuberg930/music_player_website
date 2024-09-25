@@ -3,9 +3,9 @@ import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import PublicPage from './pages/PublicPage';
 import { paths } from './utils/global_paths';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getHomeAction } from './store/actions/home_actions';
+import { getHomeAction, setCurrentScreenWidth } from './store/actions/home_actions';
 import PlaylistPage from "./pages/PlaylistPage";
 import ZingChartPage from "./pages/ZingChartPage";
 import SearchPage from "./pages/SearchPage";
@@ -19,9 +19,21 @@ import WeeklyZingChartPage from "./pages/WeeklyZingChartPage";
 
 function App() {
   const dispatch = useDispatch()
+  const [currentWidth, setCurrentWidth] = useState(window.innerWidth)
+
+  const setWidth = (e) => {
+    setCurrentWidth(e.target.innerWidth)
+  }
+
   useEffect(() => {
     dispatch(getHomeAction())
-  })
+    window.addEventListener('resize', setWidth)
+    return () => { window.removeEventListener('resize', setWidth) }
+  }, [])
+
+  useEffect(() => {
+    dispatch(setCurrentScreenWidth(currentWidth))
+  }, [currentWidth])
 
   return (
     <Routes>

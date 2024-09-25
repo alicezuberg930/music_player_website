@@ -7,7 +7,7 @@ const PlaylistCard = ({ item, sectionId, isSearch }) => {
     const navigate = useNavigate()
 
     return (
-        <div className={`text-sm flex flex-col gap-3 w-1/5 cursor-pointer px-3 ${isSearch ? 'mb-5' : ''}`}
+        <div className={`text-sm flex flex-col lg:w-1/5 w-1/4 gap-3 cursor-pointer px-3 ${isSearch ? 'mb-5' : ''}`}
             onClick={() => navigate(link, { state: { playAlbum: false } })}
         >
             <div className="relative w-full group overflow-hidden rounded-lg">

@@ -9,11 +9,11 @@ import ArtistCard from "../components/ArtistCard"
 import { Triangle } from "react-loader-spinner"
 
 const HomePage = () => {
-    const { playlistsList, weekCharts, favoriteArtists, spotLightArtists } = useSelector(state => state.app)
+    const { playlistsList, weekCharts, newRelease, favoriteArtists, spotLightArtists } = useSelector(state => state.app)
 
     return (
         <>
-            {playlistsList && weekCharts ?
+            {playlistsList && weekCharts && newRelease ?
                 <div className="px-10">
                     <div className="h-16"></div>
                     <HomeBannerSlider />

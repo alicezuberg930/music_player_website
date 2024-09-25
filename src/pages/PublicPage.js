@@ -27,7 +27,7 @@ const PublicPage = () => {
         <>
             <div className="w-full h-screen bg-main-300 overflow-hidden">
                 <div className="w-full h-full flex">
-                    <div className="md:w-[240px] w-[70px] flex-none border bg-main-200">
+                    <div className="lg:w-[240px] w-[70px] flex-none border bg-main-200">
                         <SidebarLeft />
                     </div>
                     <div className="flex-auto flex flex-col relative">

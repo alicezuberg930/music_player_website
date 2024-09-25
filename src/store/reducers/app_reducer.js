@@ -10,7 +10,8 @@ const initState = {
     chart: {},
     ranks: [],
     spotLightArtists: [],
-    scrollTop: true
+    scrollTop: true,
+    screenWidth: window.innerWidth
 }
 
 const appReducer = (state = initState, action) => {
@@ -36,6 +37,11 @@ const appReducer = (state = initState, action) => {
             return {
                 ...state,
                 scrollTop: action.flag
+            }
+        case action_types.SCREEN_WIDTH:
+            return {
+                ...state,
+                screenWidth: action.screenWidth
             }
         default:
             return state

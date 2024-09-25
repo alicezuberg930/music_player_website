@@ -24,4 +24,8 @@ export const isScrollTop = (flag) => (dispatch) => {
 
 export const setWeekChartLink = (links) => (dispatch) => {
     dispatch({ type: action_types.WEEK_CHART_LINK, links })
+}
+
+export const setCurrentScreenWidth = (screenWidth) => (dispatch) => {
+    dispatch({ type: action_types.SCREEN_WIDTH, screenWidth })
 } 
