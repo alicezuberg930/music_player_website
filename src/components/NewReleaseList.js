@@ -15,7 +15,7 @@ const NewReleaseList = () => {
 
     useEffect(() => {
         setNewReleaseSongs()
-    }, [type])  
+    }, [type])
 
     return (
         <div className="mt-12">
@@ -42,7 +42,7 @@ const NewReleaseList = () => {
             </div>
             <div className="flex flex-wrap w-full mt-5">
                 {
-                    songs?.slice(0, 12).map(item => {
+                    songs?.slice(0, 12)?.map(item => {
                         return (
                             <div key={item?.encodeId} className="md:w-[45%] xl:w-[30%]">
                                 <SongItem song={item} imgSize="lg" showTime={true} />
