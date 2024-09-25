@@ -1,5 +1,5 @@
 import { getHome } from "../../services/api_service.js"
-import action_types from "./action_types"
+import action_types from "./action_types.js"
 
 export const getHomeAction = () => async (dispatch) => {
     try {
@@ -17,3 +17,11 @@ export const getHomeAction = () => async (dispatch) => {
 export const setShowSideBarRight = (flag) => (dispatch) => {
     dispatch({ type: action_types.SHOW_SIDEBAR_RIGHT, flag })
 }
+
+export const isScrollTop = (flag) => (dispatch) => {
+    dispatch({ type: action_types.IS_SCROLL_TOP, flag })
+}
+
+export const setWeekChartLink = (links) => (dispatch) => {
+    dispatch({ type: action_types.WEEK_CHART_LINK, links })
+} 

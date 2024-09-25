@@ -9,6 +9,8 @@ const initState = {
     favoriteArtists: {},
     chart: {},
     ranks: [],
+    spotLightArtists: [],
+    scrollTop: true
 }
 
 const appReducer = (state = initState, action) => {
@@ -19,15 +21,21 @@ const appReducer = (state = initState, action) => {
                 banners: action.homeData?.find(item => item?.sectionId === "hSlider")?.items || [],
                 playlistsList: action.homeData?.filter(item => item?.sectionType === "playlist") || [],
                 newRelease: action.homeData?.find(item => item?.sectionType === "new-release") || {},
-                weekCharts: action.homeData?.find(item => item?.sectionType === "weekChart").items || [],
+                weekCharts: action.homeData?.find(item => item?.sectionType === "weekChart")?.items || [],
                 favoriteArtists: action.homeData?.find(item => item?.sectionId === "hMix") || {},
-                chart: action.homeData?.find(item => item?.sectionId === "hZC").chart || {},
-                ranks: action.homeData?.find(item => item?.sectionId === "hZC").items || {},
+                chart: action.homeData?.find(item => item?.sectionId === "hZC")?.chart || {},
+                ranks: action.homeData?.find(item => item?.sectionId === "hZC")?.items || {},
+                spotLightArtists: action.homeData?.find(item => item?.sectionType === "artistSpotlight")?.items || [],
             }
         case action_types.SHOW_SIDEBAR_RIGHT:
             return {
                 ...state,
                 showSideBarRight: action.flag
+            }
+        case action_types.IS_SCROLL_TOP:
+            return {
+                ...state,
+                scrollTop: action.flag
             }
         default:
             return state

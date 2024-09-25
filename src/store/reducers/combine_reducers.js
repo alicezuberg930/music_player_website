@@ -13,7 +13,10 @@ const config = {
 const currentSongConfig = {
     ...config,
     key: 'current_song',
-    whitelist: ['currentSongId', 'isPlaying', 'atPlaylist', 'songs', 'currentSongData', 'currentPlaylistName']
+    whitelist: [
+        'currentSongId', 'isPlaying', 'atPlaylist', 'songs', 'currentSongData',
+        'currentPlaylistName', 'recentSongs', 'searchData', 'searchSongs', 'weekChartLinks'
+    ]
 }
 
 const combineReducer = combineReducers({

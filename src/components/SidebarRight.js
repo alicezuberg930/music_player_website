@@ -6,11 +6,11 @@ import SongItem from "./SongItem"
 const SidebarRight = () => {
     const [type, setType] = useState(0)
     const { ImBin } = icons
-    const { currentSongData, songs, currentPlaylistName } = useSelector(state => state.music)
+    const { currentSongData, songs, currentPlaylistName, recentSongs } = useSelector(state => state.music)
 
     return (
         <div className="flex flex-col text-xs w-full h-full">
-            <div className="h-16 flex-none py-3 flex items-center justify-between px-2 gap-8">
+            <div className="h-16 flex-none py-3 flex items-center justify-between px-2 gap-8" >
                 <div className="flex flex-auto bg-main-200 rounded-full p-1 cursor-pointer">
                     <span className={`py-1 flex-1 rounded-full flex justify-center ${type === 0 && 'bg-main-100'}`}
                         onClick={() => setType(0)}
@@ -27,7 +27,7 @@ const SidebarRight = () => {
                     <ImBin size={18} />
                 </span>
             </div>
-            <div className="flex flex-col px-2">
+            <div className={`${type === 1 && 'hidden'} flex flex-col px-2`}>
                 <SongItem song={currentSongData} imgSize="sm" style="bg-main-500 text-white" />
                 <div className="px-2 py-3">
                     <span className="text-sm font-bold">Tiếp theo</span>
@@ -40,7 +40,9 @@ const SidebarRight = () => {
             <div className="flex flex-col overflow-hidden">
                 <div className="h-full overflow-y-scroll">
                     {
-                        songs?.map(song => {
+                        type === 0 ? songs?.map(song => {
+                            return (<SongItem song={song} imgSize="sm" key={song.encodeId} />)
+                        }) : recentSongs?.map(song => {
                             return (<SongItem song={song} imgSize="sm" key={song.encodeId} />)
                         })
                     }

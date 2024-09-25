@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getSongDetails, getSongStreaming } from "../services/api_service"
 import { icons } from "../utils/icons"
-import { playPlaylist, setCurrentSongData, setCurrentSongId, setPlay } from "../store/actions/get_music"
+import { playPlaylist, setCurrentSongData, setCurrentSongId, setPlay } from "../store/actions/music_actions"
 import { formatDuration } from "../utils/utils"
 import { toast } from "react-toastify"
 import { RotatingLines } from "react-loader-spinner"
-import { setShowSideBarRight } from "../store/actions/get_home"
+import { setShowSideBarRight } from "../store/actions/home_actions"
 let thumbInterval
 
 const Player = () => {
@@ -197,15 +197,15 @@ const Player = () => {
                     <span>{formatDuration(songDetails?.duration)}</span>
                 </div>
             </div>
-            <div className="w-[30%] flex items-center justify-end gap-4">
+            <div className="w-[30%] hidden md:flex items-center justify-end gap-4">
                 <span onClick={() => setVolume(volume === 0 ? 50 : 0)}>
                     {
                         volume >= 50 ? <SlVolume2 /> : volume === 0 ? <SlVolumeOff /> : <SlVolume1 />
                     }
                 </span>
-                <input type="range" step={1} min={0} max={100} onChange={(e) => setVolume(e.target.value)} value={volume} className="h-1 hover:h-2" />
-                <span className="p-1 rounded-md cursor-pointer bg-main-500 opacity-90 hover:opacity-100">
-                    <BsMusicNoteList size={24} onClick={() => dispatch(setShowSideBarRight(!showSideBarRight))} />
+                <input type="range" step={1} min={0} max={100} onChange={(e) => setVolume(e.target.value)} value={volume} className="bg-main-500 h-1 hover:h-2" />
+                <span className="p-[6px] rounded-md cursor-pointer bg-main-500 text-white opacity-90 hover:opacity-100">
+                    <BsMusicNoteList size={18} onClick={() => dispatch(setShowSideBarRight(!showSideBarRight))} />
                 </span>
             </div>
         </div >

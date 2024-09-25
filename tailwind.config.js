@@ -83,7 +83,7 @@ module.exports = {
       },
       animation: {
         'slide-right': 'slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;',
-        'slide-left': 'slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;',
+        'slide-left': 'slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;',
         'slide-left-2': 'slide-left-2 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;',
         'rotate-center': 'rotate-center 10s linear infinite;',
         'rotate-center-pause': 'rotate-center-pause 0.5s linear 1 both;',
@@ -95,6 +95,9 @@ module.exports = {
         '6': '6 6 0%',
         '7': '7 7 0%'
       },
+      blur: {
+        '50': '50px'
+      }
     },
   },
   plugins: [],

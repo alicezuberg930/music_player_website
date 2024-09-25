@@ -7,5 +7,12 @@ export const paths = {
     WEEKRANK__TITLE__ID: "zing-chart-tuan/:title/:id",
     ZING_CHART: "zing-chart",
     MY_MUSIC: "mymusic",
-    FOLLOW: "follow"
+    FOLLOW: "follow",
+    SEARCH: "search",
+    SEARCH_ALL: "all",
+    SEARCH_SONG: "song",
+    SEARCH_PLAYLIST: "playlist",
+    SEARCH_ARTIST: "artist",
+    SEARCH_MV: "video",
+    ARTIST__NAME: "artist/:name"
 }

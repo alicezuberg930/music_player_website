@@ -7,6 +7,10 @@ const initState = {
     songs: [],
     currentSongData: null,
     currentPlaylistName: null,
+    recentSongs: [],
+    searchData: null,
+    searchSongs: [],
+    weekChartLinks: []
 }
 
 const musicReducer = (state = initState, action) => {
@@ -40,6 +44,34 @@ const musicReducer = (state = initState, action) => {
             return {
                 ...state,
                 currentPlaylistName: action.playlistName || null
+            }
+        case action_types.ADD_RECENT_SONG:
+            let currentSongs = state.recentSongs
+            if (action.recentSong) {
+                if (currentSongs.find(i => i.encodeId === action.recentSong.encodeId)) {
+                    currentSongs = currentSongs.filter(i => i.encodeId !== action.recentSong.encodeId)
+                }
+                if (currentSongs.length > 29) currentSongs.pop()
+                currentSongs = [action.recentSong, ...currentSongs]
+            }
+            return {
+                ...state,
+                recentSongs: currentSongs
+            }
+        case action_types.SEARCH:
+            return {
+                ...state,
+                searchData: action.searchData || {}
+            }
+        case action_types.SEARCH_SONGS:
+            return {
+                ...state,
+                searchSongs: action.songs || []
+            }
+        case action_types.WEEK_CHART_LINK:
+            return {
+                ...state,
+                weekChartLinks: action.links || []
             }
         default:
             return state

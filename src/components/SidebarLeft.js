@@ -20,7 +20,7 @@ const SidebarLeft = () => {
                                 className={({ isActive }) => checkActive(isActive)}
                             >
                                 {value.icon}
-                                <span>{value.text}</span>
+                                <span className="hidden md:inline">{value.text}</span>
                             </NavLink>
                         )
                     })

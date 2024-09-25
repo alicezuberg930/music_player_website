@@ -4,12 +4,18 @@ import SongItem from "./SongItem"
 
 const NewReleaseList = () => {
     const { newRelease } = useSelector(state => state.app)
-    const [type, setType] = useState(0)
+    const [type, setType] = useState(-1)
     const [songs, setSongs] = useState([])
 
+    const setNewReleaseSongs = () => {
+        if (type === -1) setSongs(newRelease.items?.all)
+        if (type === 0) setSongs(newRelease.items?.others)
+        if (type === 1) setSongs(newRelease.items?.vPop)
+    }
+
     useEffect(() => {
-        type === 0 ? setSongs(newRelease?.items?.others) : setSongs(newRelease?.items?.vPop)
-    }, [type])
+        setNewReleaseSongs()
+    }, [type])  
 
     return (
         <div className="mt-12">
@@ -18,6 +24,11 @@ const NewReleaseList = () => {
                 <span className="text-xs uppercase">Tất cả</span>
             </div>
             <div className="flex items-center gap-5 text-xs">
+                <button onClick={() => setType(-1)}
+                    className={`${type === -1 ? 'bg-main-500 text-white' : ''} py-1 px-4 rounded-l-full rounded-r-full border border-gray-400`}
+                >
+                    Tất cả
+                </button>
                 <button onClick={() => setType(0)}
                     className={`${type === 0 ? 'bg-main-500 text-white' : ''} py-1 px-4 rounded-l-full rounded-r-full border border-gray-400`}
                 >

@@ -24,3 +24,26 @@ export const sidebarMenu = [
         icon: <MdOutlineFeed size={24} />
     },
 ]
+
+export const searchMenu = [
+    {
+        path: paths.SEARCH_ALL,
+        text: 'Tất cả',
+    },
+    {
+        path: paths.SEARCH_SONG,
+        text: 'Bài hát',
+    },
+    {
+        path: paths.SEARCH_PLAYLIST,
+        text: 'Playlist/album',
+    },
+    {
+        path: paths.SEARCH_ARTIST,
+        text: 'Nghệ sĩ',
+    },
+    {
+        path: paths.SEARCH_MV,
+        text: 'MV',
+    },
+]

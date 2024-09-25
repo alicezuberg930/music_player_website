@@ -35,3 +35,51 @@ export const getDetailsPlaylist = async (id) => {
         return error
     }
 }
+
+export const searchKeyword = async (keyword) => {
+    try {
+        let response = await instance({ url: "/search/multi", method: "get", params: { query: keyword } })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}
+
+export const getArtistSongs = async (id) => {
+    try {
+        let response = await instance({ url: "/song/get/list", method: "get", params: { id: id, page: 1, count: 50 } })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}
+
+export const getArtist = async (alias) => {
+    try {
+        let response = await instance({ url: "/page/get/artist", method: "get", params: { name: alias } })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}
+
+
+export const getChartHome = async (alias) => {
+    try {
+        let response = await instance({ url: "/page/get/chart-home", method: "get", params: { name: alias } })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}
+
+export const getWeekChart = async (id, week, year) => {
+    try {
+        let response = await instance({
+            url: "/page/get/week-chart", method: "get", params: { id: id }
+        })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}

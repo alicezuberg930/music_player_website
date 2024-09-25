@@ -1,9 +1,10 @@
 import { memo } from "react"
 import { useDispatch } from "react-redux"
-import { setCurrentSongId, setPlay } from "../store/actions/get_music"
+import { setCurrentSongId, setPlay } from "../store/actions/music_actions"
 
 const SongItem = ({ song, order, percent, imgSize, style, showTime }) => {
     const dispatch = useDispatch()
+    const imageSizeCss = imgSize === 'xl' ? 'w-20 h-20' : imgSize == 'lg' ? 'w-14 h-14' : 'w-10 h-10'
 
     return (
         <div className={`${style || 'text-black hover:bg-main-200'} w-full p-2 h-auto rounded-md cursor-pointer`}
@@ -18,7 +19,7 @@ const SongItem = ({ song, order, percent, imgSize, style, showTime }) => {
                         {order}
                     </span>
                 }
-                <img src={song?.thumbnail} alt={song?.encodeId} className={`${imgSize === 'lg' ? 'w-14 h-14' : 'w-10 h-10'} object-cover rounded-md`} />
+                <img src={song?.thumbnail} alt={song?.encodeId} className={`${imageSizeCss} object-cover rounded-md`} />
                 <div className="flex flex-col flex-auto">
                     <span className="text-sm font-semibold line-clamp-1">{song?.title}</span>
                     <span className="text-xs opacity-70 line-clamp-1">{song?.artistsNames}</span>
