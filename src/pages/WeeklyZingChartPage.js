@@ -34,11 +34,11 @@ const WeeklyZingChartPage = () => {
 
     return (
         <div className="">
-            <div className='relative h-[430px]'>
+            <div className='relative h-[450px]'>
                 <img src={bgWeekChart} alt="bg-chart" className='w-full h-full block object-cover grayscale' />
                 <div className='absolute top-0 left-0 right-0 bottom-0 bg-[rgba(206,217,217,0.7)]'></div>
                 <div className='absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-[#CED9D9] to-transparent'></div>
-                <div className="absolute top-1/3 left-0 right-0 bottom-0 px-10 flex flex-col gap-4">
+                <div className="absolute top-[20%] left-0 right-0 bottom-0 px-10 flex flex-col gap-4">
                     <span className="flex gap-2 text-main-500 items-center mb-10">
                         <h3 className="text-4xl font-bold">Bảng xếp hạng tuần</h3>
                         <span className="bg-white rounded-full p-1">

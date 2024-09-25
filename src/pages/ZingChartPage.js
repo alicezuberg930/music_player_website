@@ -122,25 +122,23 @@ const ZingChartPage = () => {
 
     return (
         <div className="w-full">
-            <div className='relative h-[430px]'>
+            <div className='relative h-[500px]'>
                 <img src={bgChart} alt="bg-chart" className='w-full h-full block object-cover grayscale' />
                 <div className='absolute top-0 left-0 right-0 bottom-0 bg-[rgba(206,217,217,0.9)]'></div>
                 <div className='absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-[#CED9D9] to-transparent'></div>
-                <div className="absolute top-20 left-0 right-0 bottom-0 px-10">
-                    <div className="block">
-                        <span className="flex gap-2 items-center mb-10">
-                            <h3 className="text-4xl text-white font-bold zing-chart-section">#zingchart</h3>
-                            <span className="text-green-400 bg-white rounded-full p-1">
-                                <BsPlayFill color="green" size={20} />
-                            </span>
+                <div className="absolute top-[20%] left-0 right-0 bottom-0 px-10">
+                    <span className="flex gap-2 items-center mb-10">
+                        <h3 className="text-4xl text-white font-bold zing-chart-section">#zingchart</h3>
+                        <span className="text-green-400 bg-white rounded-full p-1">
+                            <BsPlayFill color="green" size={20} />
                         </span>
-                        <div className="h-[300px] relative">
-                            {data && <Line data={data} ref={chartRef} options={options} />}
-                            <div className='tooltip absolute bg-main-200 rounded-md w-48 z-[100]'
-                                style={{ top: tooltipData.top, left: tooltipData.left, opacity: tooltipData.opacity }}
-                            >
-                                <SongItem song={selectedSong} percent={Math.round(selectedSong?.score / chartData?.RTChart?.chart?.totalScore * 100)} imgSize="sm" />
-                            </div>
+                    </span>
+                    <div className="h-[300px] relative">
+                        {data && <Line data={data} ref={chartRef} options={options} />}
+                        <div className='tooltip absolute bg-main-200 rounded-md w-48 z-[100]'
+                            style={{ top: tooltipData.top, left: tooltipData.left, opacity: tooltipData.opacity }}
+                        >
+                            <SongItem song={selectedSong} percent={Math.round(selectedSong?.score / chartData?.RTChart?.chart?.totalScore * 100)} imgSize="sm" />
                         </div>
                     </div>
                 </div>
