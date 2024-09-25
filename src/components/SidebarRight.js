@@ -28,7 +28,7 @@ const SidebarRight = () => {
                 </span>
             </div>
             <div className={`${type === 1 && 'hidden'} flex flex-col px-2`}>
-                <SongItem song={currentSongData} imgSize="sm" style="bg-main-500 text-white" />
+                {currentSongData && <SongItem song={currentSongData} imgSize="sm" style="bg-main-500 text-white" />}
                 <div className="px-2 py-3">
                     <span className="text-sm font-bold">Tiếp theo</span>
                     <span className="w-full flex">
