@@ -1,5 +1,5 @@
 import { AiOutlineArrowRight, AiOutlineArrowLeft, AiFillHeart, AiOutlineHeart, AiOutlineUserAdd } from 'react-icons/ai'
-import { MdOutlineLibraryMusic, MdOutlineFeed, MdSkipNext, MdSkipPrevious, MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
+import { MdOutlineLibraryMusic, MdOutlineFeed, MdSkipNext, MdSkipPrevious, MdArrowBackIosNew, MdArrowForwardIos, MdFullscreen, MdOutlineFullscreenExit, MdPictureInPicture } from 'react-icons/md'
 import { HiOutlineChartPie } from 'react-icons/hi'
 import { TbChartArcs } from 'react-icons/tb'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
@@ -11,6 +11,8 @@ import { TbRepeatOnce } from 'react-icons/tb'
 import { SlVolumeOff, SlVolume1, SlVolume2 } from 'react-icons/sl'
 import { ImBin } from 'react-icons/im'
 import { GrClose } from 'react-icons/gr'
+import { LuRectangleHorizontal } from "react-icons/lu";
+import { IoMdSettings } from "react-icons/io";
 
 export const icons = {
     AiOutlineArrowRight,
@@ -42,5 +44,10 @@ export const icons = {
     AiOutlineUserAdd,
     GrClose,
     MdArrowBackIosNew,
-    MdArrowForwardIos
+    MdArrowForwardIos,
+    LuRectangleHorizontal,
+    MdFullscreen,
+    MdOutlineFullscreenExit,
+    MdPictureInPicture,
+    IoMdSettings
 }

@@ -83,3 +83,14 @@ export const getWeekChart = async (id, week, year) => {
         return error
     }
 }
+
+export const getVideo = async (id) => {
+    try {
+        let response = await instance({
+            url: "/page/get/video", method: "get", params: { id: id }
+        })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}

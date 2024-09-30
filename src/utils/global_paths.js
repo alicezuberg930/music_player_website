@@ -14,5 +14,6 @@ export const paths = {
     SEARCH_PLAYLIST: "playlist",
     SEARCH_ARTIST: "artist",
     SEARCH_MV: "video",
-    ARTIST__NAME: "artist/:name"
+    ARTIST__NAME: "artist/:name",
+    VIDEOCLIP__TITLE__ID: "video-clip/:title/:id",
 }

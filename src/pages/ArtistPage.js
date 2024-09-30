@@ -8,6 +8,7 @@ import SongItem from "../components/SongItem"
 import PlaylistSection from "../components/PlaylistSection"
 import ArtistCard from "../components/ArtistCard"
 import { useSelector } from "react-redux"
+import MVSection from "../components/MVSection"
 
 const ArtistPage = () => {
     const { AiOutlineUserAdd, BsPlayFill } = icons
@@ -103,6 +104,9 @@ const ArtistPage = () => {
                         )
                     })
                 }
+            </div>
+            <div className="px-10">
+                <MVSection thumbnail={artist?.thumbnail} videos={artist?.sections?.find(i => i.sectionType === "video")} />
             </div>
             <div className="px-10 mt-12">
                 <h3 className="text-lg font-bold mb-4">Có thể bạn sẽ thích</h3>

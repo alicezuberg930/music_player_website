@@ -45425,3 +45425,1213 @@ export const weekChartData = {
     ],
     "sectionId": "cZCW"
 }
+
+export const videoDetailsHC = {
+    "encodeId": "Z7AD9IZF",
+    "title": "Who I Am",
+    "alias": "Who-I-Am-Alan-Walker-Putri-Ariani",
+    "isOffical": true,
+    "username": "",
+    "artistsNames": "Alan Walker, Putri Ariani",
+    "artists": [
+        {
+            "id": "IWZA6CCW",
+            "name": "Alan Walker",
+            "link": "/Alan-Walker",
+            "spotlight": false,
+            "alias": "Alan-Walker",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+            "isOA": true,
+            "isOABrand": false,
+            "playlistId": "ZWZCU89E"
+        },
+        {
+            "id": "IW8AE68B",
+            "name": "Putri Ariani",
+            "link": "/nghe-si/Putri-Ariani-IW8AE68B",
+            "spotlight": false,
+            "alias": "Putri-Ariani-IW8AE68B",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/f/4/2/bf4295aefffdf0ff26f527d194a60778.jpg",
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/f/4/2/bf4295aefffdf0ff26f527d194a60778.jpg",
+            "isOA": false,
+            "isOABrand": false,
+            "playlistId": "6BFD9AIB"
+        }
+    ],
+    "isWorldWide": false,
+    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/cover/2/5/3/0/2530bd0d16231f6dee18079866433517.jpg",
+    "link": "/video-clip/Who-I-Am-Alan-Walker-Putri-Ariani/Z7AD9IZF.html",
+    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/cover/2/5/3/0/2530bd0d16231f6dee18079866433517.jpg",
+    "duration": 194,
+    "streamingStatus": 1,
+    "artist": {
+        "id": "IWZA6CCW",
+        "name": "Alan Walker",
+        "link": "/nghe-si/Alan-Walker",
+        "spotlight": false,
+        "alias": "Alan-Walker",
+        "playlistId": "ZWZCU89E",
+        "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+        "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg"
+    },
+    "startTime": 0,
+    "endTime": 0,
+    "statusName": "Hiển thị",
+    "statusCode": 1,
+    "createdAt": 1725061551,
+    "disabledAds": false,
+    "privacy": "public",
+    "lyric": "",
+    "genres": [
+        {
+            "id": "IWZ9Z0CU",
+            "name": "Khác",
+            "title": "Khác",
+            "alias": "khac",
+            "link": "/the-loai-album/Khac/IWZ9Z0CU.html"
+        }
+    ],
+    "composers": [
+        {
+            "id": "IWZA6CCW",
+            "name": "Alan Walker",
+            "link": "/Alan-Walker",
+            "spotlight": false,
+            "alias": "Alan-Walker",
+            "playlistId": "ZWZCU89E",
+            "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+            "totalFollow": 1196850
+        },
+        {
+            "id": "IW6O7CFE",
+            "name": "Gunnar Greve",
+            "link": "/nghe-si/Gunnar-Greve",
+            "spotlight": false,
+            "alias": "Gunnar-Greve",
+            "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+            "totalFollow": 2
+        },
+        {
+            "id": "IW6O6DOE",
+            "name": "Fredrik Borch Olsen",
+            "link": "/nghe-si/Fredrik-Borch-Olsen",
+            "spotlight": false,
+            "alias": "Fredrik-Borch-Olsen",
+            "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+            "totalFollow": 10
+        },
+        {
+            "id": "IW6UCEF0",
+            "name": "Marcus Arnbekk",
+            "link": "/nghe-si/Marcus-Arnbekk",
+            "spotlight": false,
+            "alias": "Marcus-Arnbekk",
+            "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+            "totalFollow": 2
+        },
+        {
+            "id": "IW6WEEAA",
+            "name": "Mats Lie Skare",
+            "link": "/nghe-si/Mats-Lie-Skare",
+            "spotlight": false,
+            "alias": "Mats-Lie-Skare",
+            "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+            "totalFollow": 2
+        }
+    ],
+    "recommends": [
+        {
+            "encodeId": "ZW7WF8ZE",
+            "title": "Chú Đại Bi (Phạn Ngữ)",
+            "alias": "Chu-Dai-Bi-Phan-Ngu-Lieng-Kieng-Quang",
+            "isOffical": true,
+            "username": "mp3",
+            "artistsNames": "Liêng Kiếng Quang",
+            "artists": [
+                {
+                    "id": "IWZA6OZ9",
+                    "name": "Liêng Kiếng Quang",
+                    "link": "/nghe-si/Lieng-Kieng-Quang",
+                    "spotlight": false,
+                    "alias": "Lieng-Kieng-Quang",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/2/c/c/f/2ccf84aa8622d5780c10fc88f8c69994.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/2/c/c/f/2ccf84aa8622d5780c10fc88f8c69994.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "ZUOAF8DZ"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_png/thumb_video/1/8/185835ec3f1d0fff0d90e17032f8336a_1446197104.png",
+            "link": "/video-clip/Chu-Dai-Bi-Phan-Ngu-Lieng-Kieng-Quang/ZW7WF8ZE.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_png/thumb_video/1/8/185835ec3f1d0fff0d90e17032f8336a_1446197104.png",
+            "duration": 332,
+            "streamingStatus": 1,
+            "artist": {
+                "id": "IWZA6OZ9",
+                "name": "Liêng Kiếng Quang",
+                "link": "/nghe-si/Lieng-Kieng-Quang",
+                "spotlight": false,
+                "alias": "Lieng-Kieng-Quang",
+                "playlistId": "ZUOAF8DZ",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/2/c/c/f/2ccf84aa8622d5780c10fc88f8c69994.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAIU9CF",
+            "title": "a lot (Official Video)",
+            "alias": "a-lot-Official-Video-21-Savage-J-Cole",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "21 Savage, J. Cole",
+            "artists": [
+                {
+                    "id": "IWZA6DUF",
+                    "name": "21 Savage",
+                    "link": "/nghe-si/21-Savage",
+                    "spotlight": false,
+                    "alias": "21-Savage",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/f/3/9/df3947a6e2beb3c525af1f0cc7c29e1a.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/d/f/3/9/df3947a6e2beb3c525af1f0cc7c29e1a.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "ZOEIZOU9"
+                },
+                {
+                    "id": "IWZ97EBA",
+                    "name": "J. Cole",
+                    "link": "/nghe-si/J-Cole-IWZ97EBA",
+                    "spotlight": false,
+                    "alias": "J-Cole-IWZ97EBA",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/7/f/2/97f2e5b158b46c8bb21e4ad75b1ca056.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/7/f/2/97f2e5b158b46c8bb21e4ad75b1ca056.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6UAE8O9E"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/1/f/4/9/1f498e0accb1e510d6a59ed27bb23b2c.jpg",
+            "link": "/video-clip/a-lot-Official-Video-21-Savage-J-Cole/ZWAIU9CF.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/1/f/4/9/1f498e0accb1e510d6a59ed27bb23b2c.jpg",
+            "duration": 392,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZA6DUF",
+                "name": "21 Savage",
+                "link": "/nghe-si/21-Savage",
+                "spotlight": false,
+                "alias": "21-Savage",
+                "playlistId": "ZOEIZOU9",
+                "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/3/2/9/6/329605d2979cc079d3ab42a9fbf63f0d.jpg",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/d/f/3/9/df3947a6e2beb3c525af1f0cc7c29e1a.jpg"
+            }
+        },
+        {
+            "encodeId": "ZO7ZEDWU",
+            "title": "Sorry",
+            "alias": "Sorry-Alan-Walker-ISAK",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Alan Walker, ISÁK",
+            "artists": [
+                {
+                    "id": "IWZA6CCW",
+                    "name": "Alan Walker",
+                    "link": "/Alan-Walker",
+                    "spotlight": false,
+                    "alias": "Alan-Walker",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZCU89E"
+                },
+                {
+                    "id": "IW6UZW6I",
+                    "name": "ISÁK",
+                    "link": "/nghe-si/ISAK",
+                    "spotlight": false,
+                    "alias": "ISAK",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/8/f/6/b8f6ad22f4b66947d2d1e6c1ce16e706.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/8/f/6/b8f6ad22f4b66947d2d1e6c1ce16e706.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "689U9C6U"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/a/8/a/f/a8afa15cd7908a31c0203a016d919999.jpg",
+            "link": "/video-clip/Sorry-Alan-Walker-ISAK/ZO7ZEDWU.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/a/8/a/f/a8afa15cd7908a31c0203a016d919999.jpg",
+            "duration": 189,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZA6CCW",
+                "name": "Alan Walker",
+                "link": "/nghe-si/Alan-Walker",
+                "spotlight": false,
+                "alias": "Alan-Walker",
+                "playlistId": "ZWZCU89E",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg"
+            }
+        },
+        {
+            "encodeId": "ZW7EUBW6",
+            "title": "Stay Together",
+            "alias": "Stay-Together-Noah-Cyrus",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Noah Cyrus",
+            "artists": [
+                {
+                    "id": "IWZAF76W",
+                    "name": "Noah Cyrus",
+                    "link": "/nghe-si/Noah-Cyrus",
+                    "spotlight": false,
+                    "alias": "Noah-Cyrus",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/3/c/c/93cc8be0cd2c739be3762ff02b539f27.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/9/3/c/c/93cc8be0cd2c739be3762ff02b539f27.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "ZODEFAZD"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/9/2/92a062f6a9974afc19b9a10157267421_1494042863.jpg",
+            "link": "/video-clip/Stay-Together-Noah-Cyrus/ZW7EUBW6.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/9/2/92a062f6a9974afc19b9a10157267421_1494042863.jpg",
+            "duration": 200,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZAF76W",
+                "name": "Noah Cyrus",
+                "link": "/nghe-si/Noah-Cyrus",
+                "spotlight": false,
+                "alias": "Noah-Cyrus",
+                "playlistId": "ZODEFAZD",
+                "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/0/9/5/e/095efee8aeca5501fab7a5eef7e838a2.jpg",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/9/3/c/c/93cc8be0cd2c739be3762ff02b539f27.jpg"
+            }
+        },
+        {
+            "encodeId": "ZU0IBC0F",
+            "title": "Sweet Dreams",
+            "alias": "Sweet-Dreams-Alan-Walker-Imanbek",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Alan Walker, Imanbek",
+            "artists": [
+                {
+                    "id": "IWZA6CCW",
+                    "name": "Alan Walker",
+                    "link": "/Alan-Walker",
+                    "spotlight": false,
+                    "alias": "Alan-Walker",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZCU89E"
+                },
+                {
+                    "id": "IW6ZA9WF",
+                    "name": "Imanbek",
+                    "link": "/nghe-si/Imanbek",
+                    "spotlight": false,
+                    "alias": "Imanbek",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/6/c/5/8/6c58d06dfc62b490eb7846093407a0f7.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/6/c/5/8/6c58d06dfc62b490eb7846093407a0f7.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7WAIDW"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/5/3/5/3/535324da32b64501540e1ef80e95b67e.jpg",
+            "link": "/video-clip/Sweet-Dreams-Alan-Walker-Imanbek/ZU0IBC0F.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/5/3/5/3/535324da32b64501540e1ef80e95b67e.jpg",
+            "duration": 182,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZA6CCW",
+                "name": "Alan Walker",
+                "link": "/nghe-si/Alan-Walker",
+                "spotlight": false,
+                "alias": "Alan-Walker",
+                "playlistId": "ZWZCU89E",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAC69CE",
+            "title": "Different World (Lyric Video)",
+            "alias": "Different-World-Lyric-Video-Alan-Walker-K-391-Sofia-Carson-CORSAK",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Nhiều nghệ sĩ",
+            "artists": [
+                {
+                    "id": "IWZA6CCW",
+                    "name": "Alan Walker",
+                    "link": "/Alan-Walker",
+                    "spotlight": false,
+                    "alias": "Alan-Walker",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZCU89E"
+                },
+                {
+                    "id": "IWZA7OIA",
+                    "name": "K-391",
+                    "link": "/K-391",
+                    "spotlight": false,
+                    "alias": "K-391",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/a/e/b/b/aebbce76ebd8ef9bfa61e5ba5b511524.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/a/e/b/b/aebbce76ebd8ef9bfa61e5ba5b511524.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "6UB6AABC"
+                },
+                {
+                    "id": "IWZAZAWI",
+                    "name": "Sofia Carson",
+                    "link": "/nghe-si/Sofia-Carson",
+                    "spotlight": false,
+                    "alias": "Sofia-Carson",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/8/5/85e1ae37a01ff729ffcc787a27db6960_1487577156.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/8/5/85e1ae37a01ff729ffcc787a27db6960_1487577156.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6UB6A898"
+                },
+                {
+                    "id": "IW6WC6EI",
+                    "name": "CORSAK",
+                    "link": "/nghe-si/CORSAK",
+                    "spotlight": false,
+                    "alias": "CORSAK",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/6/f/7/b/6f7b02f3e8ae2d5a6919d8789b46ce61.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/6/f/7/b/6f7b02f3e8ae2d5a6919d8789b46ce61.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6UB7I0F6"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/f/a/7/7/fa77a664a2f6798c86b5aa59c6ade1d9.jpg",
+            "link": "/video-clip/Different-World-Lyric-Video-Alan-Walker-K-391-Sofia-Carson-CORSAK/ZWAC69CE.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/f/a/7/7/fa77a664a2f6798c86b5aa59c6ade1d9.jpg",
+            "duration": 201,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZA6CCW",
+                "name": "Alan Walker",
+                "link": "/nghe-si/Alan-Walker",
+                "spotlight": false,
+                "alias": "Alan-Walker",
+                "playlistId": "ZWZCU89E",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAD0BWB",
+            "title": "Pehn Di Takki (Lyric Video)",
+            "alias": "Pehn-Di-Takki-Lyric-Video-Vishal-Shekhar-Vishal-Dadlani",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Vishal & Shekhar, Vishal Dadlani",
+            "artists": [
+                {
+                    "id": "IW6UOZFF",
+                    "name": "Vishal & Shekhar",
+                    "link": "/nghe-si/Vishal-Shekhar.IW6UOZFF",
+                    "spotlight": false,
+                    "alias": "Vishal-Shekhar.IW6UOZFF",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7W9CE8"
+                },
+                {
+                    "id": "IWZF7OO8",
+                    "name": "Vishal Dadlani",
+                    "link": "/nghe-si/Vishal-Dadlani",
+                    "spotlight": false,
+                    "alias": "Vishal-Dadlani",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7W8FB8"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/5/c/6/b/5c6b10ec53f4cf80eb101daffde4dd69.jpg",
+            "link": "/video-clip/Pehn-Di-Takki-Lyric-Video-Vishal-Shekhar-Vishal-Dadlani/ZWAD0BWB.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/5/c/6/b/5c6b10ec53f4cf80eb101daffde4dd69.jpg",
+            "duration": 138,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IW6UOZFF",
+                "name": "Vishal & Shekhar",
+                "link": "/nghe-si/Vishal-Shekhar.IW6UOZFF",
+                "spotlight": false,
+                "alias": "Vishal-Shekhar.IW6UOZFF",
+                "playlistId": "6B7W9CE8",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZW6O6EAA",
+            "title": "Tìm Em",
+            "alias": "Tim-Em-Noo-Phuoc-Thinh",
+            "isOffical": true,
+            "username": "mp3",
+            "artistsNames": "Noo Phước Thịnh",
+            "artists": [
+                {
+                    "id": "IWZ9ZUU6",
+                    "name": "Noo Phước Thịnh",
+                    "link": "/Noo-Phuoc-Thinh",
+                    "spotlight": false,
+                    "alias": "Noo-Phuoc-Thinh",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/9/f/c59fdd77951d0828108173b9e8394a19.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/c/5/9/f/c59fdd77951d0828108173b9e8394a19.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZ9CFEI"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/0/f/0f69d945c241803ec65c5b4fd6b8b306_1353662287.jpg",
+            "link": "/video-clip/Tim-Em-Noo-Phuoc-Thinh/ZW6O6EAA.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/0/f/0f69d945c241803ec65c5b4fd6b8b306_1353662287.jpg",
+            "duration": 250,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZ9ZUU6",
+                "name": "Noo Phước Thịnh",
+                "link": "/nghe-si/Noo-Phuoc-Thinh",
+                "spotlight": false,
+                "alias": "Noo-Phuoc-Thinh",
+                "playlistId": "ZWZ9CFEI",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/9/f/c59fdd77951d0828108173b9e8394a19.jpg"
+            }
+        },
+        {
+            "encodeId": "ZW6807O9",
+            "title": "Em Sẽ Hạnh Phúc",
+            "alias": "Em-Se-Hanh-Phuc-Noo-Phuoc-Thinh",
+            "isOffical": true,
+            "username": "mp3",
+            "artistsNames": "Noo Phước Thịnh",
+            "artists": [
+                {
+                    "id": "IWZ9ZUU6",
+                    "name": "Noo Phước Thịnh",
+                    "link": "/Noo-Phuoc-Thinh",
+                    "spotlight": false,
+                    "alias": "Noo-Phuoc-Thinh",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/9/f/c59fdd77951d0828108173b9e8394a19.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/c/5/9/f/c59fdd77951d0828108173b9e8394a19.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZ9CFEI"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/b/c/bc1adc3d4aef966da928eb8ca8d9a114_1381727982.jpg",
+            "link": "/video-clip/Em-Se-Hanh-Phuc-Noo-Phuoc-Thinh/ZW6807O9.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/b/c/bc1adc3d4aef966da928eb8ca8d9a114_1381727982.jpg",
+            "duration": 255,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZ9ZUU6",
+                "name": "Noo Phước Thịnh",
+                "link": "/nghe-si/Noo-Phuoc-Thinh",
+                "spotlight": false,
+                "alias": "Noo-Phuoc-Thinh",
+                "playlistId": "ZWZ9CFEI",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/c/5/9/f/c59fdd77951d0828108173b9e8394a19.jpg"
+            }
+        },
+        {
+            "encodeId": "ZW9DIZ68",
+            "title": "Darkside",
+            "alias": "Darkside-Alan-Walker-Au-Ra-Tomine-Harket",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Alan Walker, Au/Ra, Tomine Harket",
+            "artists": [
+                {
+                    "id": "IWZA6CCW",
+                    "name": "Alan Walker",
+                    "link": "/Alan-Walker",
+                    "spotlight": false,
+                    "alias": "Alan-Walker",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZCU89E"
+                },
+                {
+                    "id": "IWZFF08D",
+                    "name": "Au/Ra",
+                    "link": "/nghe-si/Au-Ra",
+                    "spotlight": false,
+                    "alias": "Au-Ra",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/2/7/5/4/27547307dcbf63d89143be394e1b9baa.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/2/7/5/4/27547307dcbf63d89143be394e1b9baa.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6UB70968"
+                },
+                {
+                    "id": "IW6W9CCE",
+                    "name": "Tomine Harket",
+                    "link": "/nghe-si/Tomine Harket",
+                    "spotlight": false,
+                    "alias": "Tomine Harket",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/5/4/5/d/545d8c18a922296ddff7d9d319c95e61.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/5/4/5/d/545d8c18a922296ddff7d9d319c95e61.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7W9900"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/d/d/c/a/ddcaf4109867107abb5d2050e94b404e.jpg",
+            "link": "/video-clip/Darkside-Alan-Walker-Au-Ra-Tomine-Harket/ZW9DIZ68.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/d/d/c/a/ddcaf4109867107abb5d2050e94b404e.jpg",
+            "duration": 239,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZA6CCW",
+                "name": "Alan Walker",
+                "link": "/nghe-si/Alan-Walker",
+                "spotlight": false,
+                "alias": "Alan-Walker",
+                "playlistId": "ZWZCU89E",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAC99AD",
+            "title": "Bize O Da Lazım",
+            "alias": "Bize-O-Da-Laz-m-Birol-Giray-BeeGee-Yener-Cevik",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Birol Giray (BeeGee), Yener Çevik",
+            "artists": [
+                {
+                    "id": "IW6ZWEI7",
+                    "name": "Birol Giray (BeeGee)",
+                    "link": "/nghe-si/Birol-Giray-BeeGee",
+                    "spotlight": false,
+                    "alias": "Birol-Giray-BeeGee",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                },
+                {
+                    "id": "IW6UFWWU",
+                    "name": "Yener Çevik",
+                    "link": "/nghe-si/Yener Çevik",
+                    "spotlight": false,
+                    "alias": "Yener Çevik",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/7/0/f/b/70fb5740830b5cdd08ed4fa0aa05d39b.jpg",
+            "link": "/video-clip/Bize-O-Da-Laz-m-Birol-Giray-BeeGee-Yener-Cevik/ZWAC99AD.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/7/0/f/b/70fb5740830b5cdd08ed4fa0aa05d39b.jpg",
+            "duration": 179,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IW6ZWEI7",
+                "name": "Birol Giray (BeeGee)",
+                "link": "/nghe-si/Birol-Giray-BeeGee",
+                "spotlight": false,
+                "alias": "Birol-Giray-BeeGee",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWADIBUF",
+            "title": "Kannala Kannala (Lyric Video)",
+            "alias": "Kannala-Kannala-Lyric-Video-Hiphop-Tamizha-Kaushik-Krish-Padmalatha",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Hiphop Tamizha, Kaushik Krish, Padmalatha",
+            "artists": [
+                {
+                    "id": "IW6UZCZD",
+                    "name": "Hiphop Tamizha",
+                    "link": "/nghe-si/Hiphop-Tamizha",
+                    "spotlight": false,
+                    "alias": "Hiphop-Tamizha",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                },
+                {
+                    "id": "IW6UZCZF",
+                    "name": "Kaushik Krish",
+                    "link": "/nghe-si/Kaushik-Krish",
+                    "spotlight": false,
+                    "alias": "Kaushik-Krish",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                },
+                {
+                    "id": "IW6UZC60",
+                    "name": "Padmalatha",
+                    "link": "/nghe-si/Padmalatha",
+                    "spotlight": false,
+                    "alias": "Padmalatha",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/e/1/2/6/e12604930a690efafac10d13fb203c27.jpg",
+            "link": "/video-clip/Kannala-Kannala-Lyric-Video-Hiphop-Tamizha-Kaushik-Krish-Padmalatha/ZWADIBUF.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/e/1/2/6/e12604930a690efafac10d13fb203c27.jpg",
+            "duration": 216,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IW6UZCZD",
+                "name": "Hiphop Tamizha",
+                "link": "/nghe-si/Hiphop-Tamizha",
+                "spotlight": false,
+                "alias": "Hiphop-Tamizha",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZW78E86Z",
+            "title": "La Rompe Corazones",
+            "alias": "La-Rompe-Corazones-Daddy-Yankee-Ozuna",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Daddy Yankee, Ozuna",
+            "artists": [
+                {
+                    "id": "IWZ9ZW6F",
+                    "name": "Daddy Yankee",
+                    "link": "/nghe-si/Daddy-Yankee",
+                    "spotlight": false,
+                    "alias": "Daddy-Yankee",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/5/3/f/153f5d6959e444f14cb6d05617402e9a.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/5/3/f/153f5d6959e444f14cb6d05617402e9a.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "ZODEAZF6"
+                },
+                {
+                    "id": "IWZAEDF8",
+                    "name": "Ozuna",
+                    "link": "/nghe-si/ozuna",
+                    "spotlight": false,
+                    "alias": "ozuna",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/8/e/b/18ebcbff3f176a46c98bd76708c6be6f.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/8/e/b/18ebcbff3f176a46c98bd76708c6be6f.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6UB6ACOC"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/4/e/4e0c4f945258cd4fa7738df3f0ef6378_1496980635.jpg",
+            "link": "/video-clip/La-Rompe-Corazones-Daddy-Yankee-Ozuna/ZW78E86Z.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/4/e/4e0c4f945258cd4fa7738df3f0ef6378_1496980635.jpg",
+            "duration": 220,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZ9ZW6F",
+                "name": "Daddy Yankee",
+                "link": "/nghe-si/Daddy-Yankee",
+                "spotlight": false,
+                "alias": "Daddy-Yankee",
+                "playlistId": "ZODEAZF6",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/5/3/f/153f5d6959e444f14cb6d05617402e9a.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAD09F7",
+            "title": "Tum Mile (Lyric Video)",
+            "alias": "Tum-Mile-Lyric-Video-Pritam-Neeraj-Shridhar",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Pritam, Neeraj Shridhar",
+            "artists": [
+                {
+                    "id": "IWZFDFFZ",
+                    "name": "Pritam",
+                    "link": "/nghe-si/Pritam",
+                    "spotlight": false,
+                    "alias": "Pritam",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7W9WUE"
+                },
+                {
+                    "id": "IWZF6UF6",
+                    "name": "Neeraj Shridhar",
+                    "link": "/nghe-si/Neeraj-Shridhar",
+                    "spotlight": false,
+                    "alias": "Neeraj-Shridhar",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/3/5/5/6/3556c2b67a96a81c0c14aecca14d45d7.jpg",
+            "link": "/video-clip/Tum-Mile-Lyric-Video-Pritam-Neeraj-Shridhar/ZWAD09F7.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/3/5/5/6/3556c2b67a96a81c0c14aecca14d45d7.jpg",
+            "duration": 358,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZFDFFZ",
+                "name": "Pritam",
+                "link": "/nghe-si/Pritam",
+                "spotlight": false,
+                "alias": "Pritam",
+                "playlistId": "6B7W9WUE",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZW787CAZ",
+            "title": "Location",
+            "alias": "Location-Khalid",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Khalid",
+            "artists": [
+                {
+                    "id": "IWZAF6AF",
+                    "name": "Khalid",
+                    "link": "/Khalid",
+                    "spotlight": false,
+                    "alias": "Khalid",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/b/4/d/7b4da15ce832af2f3d408cfe8f7d021b.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/b/4/d/7b4da15ce832af2f3d408cfe8f7d021b.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZOEIZ0OO"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/9/0/90e0da1bef3e87aae2dfcd0f65a4b291_1491537789.jpg",
+            "link": "/video-clip/Location-Khalid/ZW787CAZ.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/9/0/90e0da1bef3e87aae2dfcd0f65a4b291_1491537789.jpg",
+            "duration": 221,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZAF6AF",
+                "name": "Khalid",
+                "link": "/nghe-si/Khalid",
+                "spotlight": false,
+                "alias": "Khalid",
+                "playlistId": "ZOEIZ0OO",
+                "cover": "https://photo-zmp3.zmdcdn.me/cover_artist/9/3/e/9/93e9982de3306c51475e35bdc1331cfc.jpg",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/b/4/d/7b4da15ce832af2f3d408cfe8f7d021b.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAC8EB9",
+            "title": "Abantu Mabahlangane",
+            "alias": "Abantu-Mabahlangane-Fisoh-Seni",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Fisoh Seni",
+            "artists": [
+                {
+                    "id": "IW6UDFAZ",
+                    "name": "Fisoh Seni",
+                    "link": "/nghe-si/Fisoh-Seni",
+                    "spotlight": false,
+                    "alias": "Fisoh-Seni",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/5/e/1/5/5e151a608eb4e3fc162ff468d36489c7.jpg",
+            "link": "/video-clip/Abantu-Mabahlangane-Fisoh-Seni/ZWAC8EB9.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/5/e/1/5/5e151a608eb4e3fc162ff468d36489c7.jpg",
+            "duration": 270,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IW6UDFAZ",
+                "name": "Fisoh Seni",
+                "link": "/nghe-si/Fisoh-Seni",
+                "spotlight": false,
+                "alias": "Fisoh-Seni",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWZ9C8U8",
+            "title": "Chia Đôi Một Trái Tim",
+            "alias": "Chia-Doi-Mot-Trai-Tim-Minh-Hang-Thanh-Dai-Sieu",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Minh Hằng, Thành Đại Siêu",
+            "artists": [
+                {
+                    "id": "IWZ9ZWUZ",
+                    "name": "Minh Hằng",
+                    "link": "/Minh-Hang",
+                    "spotlight": false,
+                    "alias": "Minh-Hang",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/a/8/d/7a8d62cd35b3a41580cdc2d51c0c253e.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/7/a/8/d/7a8d62cd35b3a41580cdc2d51c0c253e.jpg",
+                    "isOA": true,
+                    "isOABrand": false,
+                    "playlistId": "ZWZ9D09I"
+                },
+                {
+                    "id": "IWZ96ZIO",
+                    "name": "Thành Đại Siêu",
+                    "link": "/nghe-si/Thanh-Dai-Sieu",
+                    "spotlight": false,
+                    "alias": "Thanh-Dai-Sieu",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/0/3/1/c/031c474fb2f9279f6d38d2a21d5f7901.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/0/3/1/c/031c474fb2f9279f6d38d2a21d5f7901.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "ZOEIZOI9"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/images/uploads/2008/09_17/1221650899.jpg",
+            "link": "/video-clip/Chia-Doi-Mot-Trai-Tim-Minh-Hang-Thanh-Dai-Sieu/ZWZ9C8U8.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/images/uploads/2008/09_17/1221650899.jpg",
+            "duration": 249,
+            "streamingStatus": 1,
+            "artist": {
+                "id": "IWZ9ZWUZ",
+                "name": "Minh Hằng",
+                "link": "/nghe-si/Minh-Hang",
+                "spotlight": false,
+                "alias": "Minh-Hang",
+                "playlistId": "ZWZ9D09I",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/a/8/d/7a8d62cd35b3a41580cdc2d51c0c253e.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWAAEE6I",
+            "title": "Toque de Timbaleiro (Ao Vivo)",
+            "alias": "Toque-de-Timbaleiro-Ao-Vivo-Axe-90-Graus",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Axé 90 Graus",
+            "artists": [
+                {
+                    "id": "IW6UEA9A",
+                    "name": "Axé 90 Graus",
+                    "link": "/nghe-si/Axe-90-Graus",
+                    "spotlight": false,
+                    "alias": "Axe-90-Graus",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/b/e/1/7/be17a3346342808be9135d9d9bd64267.jpg",
+            "link": "/video-clip/Toque-de-Timbaleiro-Ao-Vivo-Axe-90-Graus/ZWAAEE6I.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/b/e/1/7/be17a3346342808be9135d9d9bd64267.jpg",
+            "duration": 137,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IW6UEA9A",
+                "name": "Axé 90 Graus",
+                "link": "/nghe-si/Axe-90-Graus",
+                "spotlight": false,
+                "alias": "Axe-90-Graus",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWADI997",
+            "title": "Enai Marubadi Marubadi (Lyric Video)",
+            "alias": "Enai-Marubadi-Marubadi-Lyric-Video-Harris-Jayaraj-Vijay-Prakash-Megha",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Harris Jayaraj, Vijay Prakash, Megha",
+            "artists": [
+                {
+                    "id": "IW6U7FZ0",
+                    "name": "Harris Jayaraj",
+                    "link": "/nghe-si/Harris-Jayaraj",
+                    "spotlight": false,
+                    "alias": "Harris-Jayaraj",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                },
+                {
+                    "id": "IWZECOA6",
+                    "name": "Vijay Prakash",
+                    "link": "/nghe-si/Vijay-Prakash",
+                    "spotlight": false,
+                    "alias": "Vijay-Prakash",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6BCACDAO"
+                },
+                {
+                    "id": "IW6UZU68",
+                    "name": "Megha",
+                    "link": "/nghe-si/Megha",
+                    "spotlight": false,
+                    "alias": "Megha",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/b/b/3/6/bb367643856fb5a92019b496d7b1dbfa.jpg",
+            "link": "/video-clip/Enai-Marubadi-Marubadi-Lyric-Video-Harris-Jayaraj-Vijay-Prakash-Megha/ZWADI997.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/b/b/3/6/bb367643856fb5a92019b496d7b1dbfa.jpg",
+            "duration": 342,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IW6U7FZ0",
+                "name": "Harris Jayaraj",
+                "link": "/nghe-si/Harris-Jayaraj",
+                "spotlight": false,
+                "alias": "Harris-Jayaraj",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWADI9IB",
+            "title": "Hey Umayaal - Unplugged (Lyric Video)",
+            "alias": "Hey-Umayaal-Unplugged-Lyric-Video-Achu-Kavya-Ajit",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Achu, Kavya Ajit",
+            "artists": [
+                {
+                    "id": "IWZFUZEO",
+                    "name": "Achu",
+                    "link": "/nghe-si/Achu",
+                    "spotlight": false,
+                    "alias": "Achu",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/2/b/2bf857c9fb7d08b4caf80eb4f1b0b16d_1488925384.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/2/b/2bf857c9fb7d08b4caf80eb4f1b0b16d_1488925384.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                },
+                {
+                    "id": "IW6UZ8UW",
+                    "name": "Kavya Ajit",
+                    "link": "/nghe-si/Kavya-Ajit",
+                    "spotlight": false,
+                    "alias": "Kavya-Ajit",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/5/8/f/4/58f41700570fb613d3fd8eee4b91c52a.jpg",
+            "link": "/video-clip/Hey-Umayaal-Unplugged-Lyric-Video-Achu-Kavya-Ajit/ZWADI9IB.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/5/8/f/4/58f41700570fb613d3fd8eee4b91c52a.jpg",
+            "duration": 173,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZFUZEO",
+                "name": "Achu",
+                "link": "/nghe-si/Achu",
+                "spotlight": false,
+                "alias": "Achu",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/2/b/2bf857c9fb7d08b4caf80eb4f1b0b16d_1488925384.jpg"
+            }
+        },
+        {
+            "encodeId": "ZWADI6DD",
+            "title": "Aankhiya Ye Aankhiya (Pseudo Video)",
+            "alias": "Aankhiya-Ye-Aankhiya-Pseudo-Video-Anand-Raaj-Anand-Asha-Bhosle-Udit-Narayan",
+            "isOffical": true,
+            "username": "",
+            "artistsNames": "Anand Raaj Anand, Asha Bhosle, Udit Narayan",
+            "artists": [
+                {
+                    "id": "IWZFUO08",
+                    "name": "Anand Raaj Anand",
+                    "link": "/nghe-si/Anand-Raaj-Anand",
+                    "spotlight": false,
+                    "alias": "Anand-Raaj-Anand",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false
+                },
+                {
+                    "id": "IWZF8Z7B",
+                    "name": "Asha Bhosle",
+                    "link": "/nghe-si/Asha-Bhosle",
+                    "spotlight": false,
+                    "alias": "Asha-Bhosle",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7W8FD6"
+                },
+                {
+                    "id": "IWZF6F0O",
+                    "name": "Udit Narayan",
+                    "link": "/nghe-si/Udit-Narayan",
+                    "spotlight": false,
+                    "alias": "Udit-Narayan",
+                    "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg",
+                    "isOA": false,
+                    "isOABrand": false,
+                    "playlistId": "6B7W8FBW"
+                }
+            ],
+            "isWorldWide": false,
+            "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w600_r300x169_jpeg/thumb_video/e/f/a/1/efa18fd5ed0f15a1b25916d8ae742dde.jpg",
+            "link": "/video-clip/Aankhiya-Ye-Aankhiya-Pseudo-Video-Anand-Raaj-Anand-Asha-Bhosle-Udit-Narayan/ZWADI6DD.html",
+            "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r16x9_jpeg/thumb_video/e/f/a/1/efa18fd5ed0f15a1b25916d8ae742dde.jpg",
+            "duration": 328,
+            "streamingStatus": 2,
+            "streamPrivileges": [
+                2
+            ],
+            "artist": {
+                "id": "IWZFUO08",
+                "name": "Anand Raaj Anand",
+                "link": "/nghe-si/Anand-Raaj-Anand",
+                "spotlight": false,
+                "alias": "Anand-Raaj-Anand",
+                "cover": "https://zmp3-static.zmdcdn.me/skins/zmp3-v5.2/images/default_cover.png",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/1/a/2/7/1a27769dccc5d485f84a9b68bd666be0.jpg"
+            }
+        }
+    ],
+    "like": 2,
+    "listen": 0,
+    "liked": false,
+    "comment": 0,
+    "streaming": {
+        "hls": {
+            "360p": "https://mcloud-mpl-s7-mv-zmp3.zmdcdn.me/ZASq0ZGKngM/whls/vod/360/myR7X1cvwkhAoibHmha/Who-I-Am.m3u8?authen=exp=1727729607~acl=/ZASq0ZGKngM/*~hmac=02c3671757cb366eeb7a5b7a5e6c4c68",
+            "480p": "https://mcloud-mpl-s7-mv-zmp3.zmdcdn.me/rj8I7uwT3vw/whls/vod/480/8YScPVXO2mihAoW84kW/Who-I-Am.m3u8?authen=exp=1727729607~acl=/rj8I7uwT3vw/*~hmac=70a08e7351c3d31bffcb5513ccfebd48",
+            "720p": "https://mcloud-mpl-s7-mv-zmp3.zmdcdn.me/8ASxZ8-nFKg/whls/vod/720/x-hhg3MLniRcvkNLyWK/Who-I-Am.m3u8?authen=exp=1727729607~acl=/8ASxZ8-nFKg/*~hmac=08de412247b171c49b1067d3c092b220",
+            "1080p": ""
+        }
+    }
+}

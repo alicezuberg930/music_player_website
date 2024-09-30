@@ -16,6 +16,7 @@ import SearchArtistPage from "./pages/SearchArtistPage";
 import SearchMVPage from "./pages/SearchMVPage";
 import ArtistPage from "./pages/ArtistPage";
 import WeeklyZingChartPage from "./pages/WeeklyZingChartPage";
+import VideoClipPage from "./pages/VideoClipPage";
 
 function App() {
   const dispatch = useDispatch()
@@ -53,6 +54,7 @@ function App() {
         </Route>
         <Route path={paths.ARTIST__NAME} element={<ArtistPage />} />
       </Route>
+      <Route path={paths.VIDEOCLIP__TITLE__ID} element={<VideoClipPage />} />
     </Routes>
   );
 }
