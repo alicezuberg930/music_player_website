@@ -15,7 +15,7 @@ const currentSongConfig = {
     key: 'current_song',
     whitelist: [
         'currentSongId', 'isPlaying', 'atPlaylist', 'songs', 'currentSongData',
-        'currentPlaylistName', 'recentSongs', 'searchData', 'searchSongs', 'weekChartLinks'
+        'currentPlaylistName', 'recentSongs', 'searchData', 'searchSongs', 'weekChartLinks', 'isTheater'
     ]
 }
 

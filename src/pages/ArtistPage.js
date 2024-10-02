@@ -3,11 +3,9 @@ import { useParams } from "react-router-dom"
 import { getArtist } from "../services/api_service"
 import { toast } from "react-toastify"
 import { icons } from "../utils/icons"
-import { artistDetailsHC } from "../assets/dummy_data"
 import SongItem from "../components/SongItem"
 import PlaylistSection from "../components/PlaylistSection"
 import ArtistCard from "../components/ArtistCard"
-import { useSelector } from "react-redux"
 import MVSection from "../components/MVSection"
 
 const ArtistPage = () => {

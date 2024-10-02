@@ -27,29 +27,6 @@ const Player = () => {
     const thumb = useRef()
     const trackRef = useRef()
 
-    const getSong = async (id) => {
-        try {
-            const [songDetailsResponse, songStreamingResponse] = await Promise.all([getSongDetails(id), getSongStreaming(id)])
-            if (songDetailsResponse.err === 0) {
-                setSongDetails(songDetailsResponse.data)
-                dispatch(setCurrentSongData(songDetailsResponse.data))
-            }
-            setIsLoading(false)
-            audio.pause()
-            if (songStreamingResponse.err === 0) {
-                setAudio(new Audio(songStreamingResponse.data['128']))
-            } else {
-                setAudio(new Audio())
-                dispatch(setPlay(false))
-                toast.warn(songStreamingResponse.msg)
-                setCurrentSecond(0)
-                thumb.current.style.cssText = `right: 100%`
-            }
-        } catch (error) {
-            toast.error(error)
-        }
-    }
-
     const handleClickProgressBar = (e) => {
         const trackRect = trackRef.current.getBoundingClientRect()
         const percent = Math.round(((e.clientX - trackRect.left) / trackRect.width) * 100)
@@ -115,6 +92,51 @@ const Player = () => {
         audio.play()
     }
 
+    // On video playing toggle values
+    audio.onplaying = () => {
+        dispatch(setPlay(true))
+    };
+
+    // On video pause toggle values
+    audio.onpause = () => {
+        dispatch(setPlay(false))
+    };
+
+    async function playAudio() {
+        if (audio.paused && !isPlaying) {
+            return audio.play();
+        }
+    }
+
+    function pauseAudio() {
+        if (!audio.paused && isPlaying) {
+            audio.pause();
+        }
+    }
+
+    const getSong = async (id) => {
+        try {
+            const [songDetailsResponse, songStreamingResponse] = await Promise.all([getSongDetails(id), getSongStreaming(id)])
+            if (songDetailsResponse.err === 0) {
+                setSongDetails(songDetailsResponse.data)
+                dispatch(setCurrentSongData(songDetailsResponse.data))
+            }
+            setIsLoading(false)
+            audio.pause()
+            if (songStreamingResponse.err === 0) {
+                setAudio(new Audio(songStreamingResponse.data['128']))
+            } else {
+                setAudio(new Audio())
+                dispatch(setPlay(false))
+                toast.warn(songStreamingResponse.msg)
+                setCurrentSecond(0)
+                thumb.current.style.cssText = `right: 100%`
+            }
+        } catch (error) {
+            toast.error(error)
+        }
+    }
+
     useEffect(() => {
         audio.volume = (volume / 100)
     }, [volume])
@@ -125,11 +147,12 @@ const Player = () => {
 
     useEffect(() => {
         thumbInterval && clearInterval(thumbInterval)
-        audio.pause()
         audio.load()
         audio.currentTime = 0
         if (isPlaying && thumb.current) {
-            audio.play()
+            setTimeout(() => {
+                audio.play();
+            }, 250);
             thumbInterval = setInterval(() => {
                 let percent = Math.round((audio.currentTime / songDetails?.duration) * 10000) / 100
                 thumb.current.style.cssText = `right: ${100 - percent}%`

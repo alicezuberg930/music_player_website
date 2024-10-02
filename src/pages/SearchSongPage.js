@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 import SongList from "../components/SongList"
 
 const SearchSongPage = () => {

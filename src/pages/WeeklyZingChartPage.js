@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useParams } from "react-router-dom"
+import { NavLink, useParams } from "react-router-dom"
 import bgWeekChart from "../assets/bg-week-chart.jpg"
 import { icons } from "../utils/icons"
 import { useSelector } from "react-redux"

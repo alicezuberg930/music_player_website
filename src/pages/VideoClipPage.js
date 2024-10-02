@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react"
 import { getVideo } from "../services/api_service"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { toast } from "react-toastify";
 import { videoDetailsHC } from "../assets/dummy_data";
 import Hls from "hls.js";
 import { icons } from "../utils/icons";
 import { formatDuration } from "../utils/utils";
+import { useDispatch, useSelector } from "react-redux";
+import { setTheater } from "../store/actions/music_actions";
 
 const VideoClipPage = () => {
     const videoRef = useRef(null);
@@ -17,12 +19,16 @@ const VideoClipPage = () => {
     const videoPlayer = document.querySelector('video')
     const { BsPlayFill, BsPauseFill, LuRectangleHorizontal, MdFullscreen, MdOutlineFullscreenExit, MdPictureInPicture, SlVolume1, SlVolume2, SlVolumeOff, IoMdSettings } = icons
     const [isPlaying, setIsPlaying] = useState(false)
-    const [isTheater, setIsTheater] = useState(false)
+    const { isTheater } = useSelector(state => state.music)
+    const dispatch = useDispatch()
     const [isFullscreen, setIsFullscreen] = useState(false)
     const [volume, setVolume] = useState(50)
     const [currentTime, setCurrentTime] = useState(0)
     let isScrubbing = false
+    const { screenWidth } = useSelector(state => state.app)
+    const displayAmount = isTheater ? (screenWidth <= 1024 ? 4 : 7) : video?.recommends?.length
 
+    console.log(screenWidth);
     const fetchVideo = async () => {
         try {
             const response = await getVideo(id)
@@ -68,13 +74,13 @@ const VideoClipPage = () => {
     const toggleTheaterMode = () => {
         videoContainer.classList.toggle('theater')
         videoPlayer.classList.toggle('h-[90vh]')
-        setIsTheater(!isTheater)
+        dispatch(setTheater(!isTheater))
     }
 
     const toggleFullScreen = () => {
         setIsFullscreen(!isFullscreen)
         if (document.fullscreenElement === null) {
-            setIsTheater(false)
+            dispatch(setTheater(false))
             videoContainer.classList.remove('theater')
             videoPlayer.classList.remove('h-[90vh]')
             videoContainer.requestFullscreen()
@@ -111,7 +117,6 @@ const VideoClipPage = () => {
         const rect = timelineContainerRef.current?.getBoundingClientRect()
         const percent = Math.min(Math.max(0, e.x - rect.x), rect.width) / rect.width
         isScrubbing = (e.buttons & 1) === 1
-        console.log(isScrubbing);
         timelineContainerRef.current?.classList.toggle("scrubbing", isScrubbing)
         if (isScrubbing) {
             videoRef.current.pause()
@@ -133,12 +138,7 @@ const VideoClipPage = () => {
     }
 
     useEffect(() => {
-        // fetchVideo()
-        setVideo(videoDetailsHC)
-        initializeVideoPlayer(videoDetailsHC.streaming?.hls['360p'])
-    }, [])
-
-    useEffect(() => {
+        fetchVideo()
         if (videoRef.current) {
             videoRef.current.addEventListener('enterpictureinpicture', () => {
                 videoRef.current.classList.add('mini-player')
@@ -158,7 +158,6 @@ const VideoClipPage = () => {
             })
             document.addEventListener('mousemove', (e) => {
                 if (isScrubbing) toggleScrubbing(e)
-
             })
         }
     }, [])
@@ -168,9 +167,9 @@ const VideoClipPage = () => {
     }, [volume])
 
     return (
-        <div className="w-full h-screen bg-main-300">
-            <div className="video-container relative w-[80%] bg-red-600">
-                <video id="videoPlayer" className="bg-black" width="100%" ref={videoRef} onClick={toggleVideo} tabIndex={0} onKeyDown={videoKeyDown} />
+        <div className={`all-container w-full bg-purple-950 ${isTheater ? 'h-fit' : 'h-screen flex justify-between px-5'} py-10 gap-6`}>
+            <div className={`video-container relative h-fit ${isTheater ? 'w-full' : 'w-3/4'}`}>
+                <video id="videoPlayer" className="rounded-md bg-black" width="100%" ref={videoRef} onClick={toggleVideo} tabIndex={0} onKeyDown={videoKeyDown} />
                 <img className="thumbnail-img" alt="thumbnail-img" />
                 <div className="px-2 absolute bottom-0 left-0 right-0 video-controls-container">
                     <div className="timeline-container h-2 rounded-full cursor-pointer flex items-center" ref={timelineContainerRef}>
@@ -245,7 +244,39 @@ const VideoClipPage = () => {
                     </div>
                 </div>
             </div>
-
+            <div className={`overflow-x-scroll text-white rounded-md h-[90%] max-h-[90%] ${isTheater ? 'w-full mt-4' : 'bg-[rgba(255,255,255,0.1)] w-1/4'}`}>
+                <div className="p-4">
+                    <span className="font-bold text-lg">Danh sách phát</span>
+                </div>
+                <div className={`${isTheater ? 'flex' : ''}`}>
+                    {
+                        video?.recommends?.slice(0, displayAmount).map(item => {
+                            return (
+                                <div key={item?.encodeId}
+                                    className={`flex ${isTheater ? 'flex-col flex-1' : 'hover:bg-[#ffffff0d]'} py-1 items-center gap-2 px-4`}
+                                >
+                                    <img src={item?.thumbnail} className={`${isTheater ? 'w-full h-28' : 'w-32 h-16'} object-cover rounded-md`} />
+                                    <div className="block w-full">
+                                        <span className="line-clamp-1 font-bold text-sm">{item?.title}</span>
+                                        <span className="line-clamp-1 font-semibold text-xs text-[rgba(255,255,255,0.4)]">
+                                            {
+                                                item?.artists?.map((artist, i) => {
+                                                    let link = `/artist/${artist.alias}`
+                                                    return (
+                                                        <Link to={link} key={link}>
+                                                            {`${artist.name}${i < item.artists.length - 1 ? ', ' : ''}`}
+                                                        </Link>
+                                                    )
+                                                })
+                                            }
+                                        </span>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
         </div>
     )
 }

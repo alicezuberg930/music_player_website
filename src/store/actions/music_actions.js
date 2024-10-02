@@ -1,4 +1,4 @@
-import { getArtistSongs, getDetailsPlaylist, searchKeyword } from "../../services/api_service"
+import { getArtistSongs, searchKeyword } from "../../services/api_service"
 import action_types from "./action_types"
 
 export const setCurrentSongId = (id) => (dispatch) => {
@@ -53,4 +53,8 @@ export const getSearchSongs = (id) => async (dispatch) => {
     } catch (error) {
         dispatch({ type: action_types.SEARCH_SONGS, songs: null })
     }
+}
+
+export const setTheater = (flag) => async (dispatch) => {
+    dispatch({ type: action_types.THEATER, flag })
 }

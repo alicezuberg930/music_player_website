@@ -12,7 +12,8 @@ const action_types = {
     SEARCH_SONGS: "SEARCH_SONGS",
     IS_SCROLL_TOP: "IS_SCROLL_TOP",
     WEEK_CHART_LINK: "WEEK_CHART_LINK",
-    SCREEN_WIDTH: "SCREEN_WIDTH"
+    SCREEN_WIDTH: "SCREEN_WIDTH",
+    THEATER: "THEATER"
 }
 
 export default action_types

@@ -8,8 +8,6 @@ import SongItem from "../components/SongItem";
 import bgChart from '../assets/bg-zing-chart.png'
 import { toast } from "react-toastify";
 import { zingChartDataHC } from "../assets/dummy_data";
-import SongList from "../components/SongList"
-import SongCard from "../components/SongCard";
 import RankListCard from "../components/RankListCard";
 import { useDispatch } from "react-redux";
 import { setWeekChartLink } from "../store/actions/home_actions";

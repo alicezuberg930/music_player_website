@@ -13,7 +13,7 @@ const SearchPlaylistPage = () => {
             let tempPlaylists = []
             let response = await getArtist(searchData?.top?.alias)
             if (response.err === 0) {
-                response?.data?.sections.map(section => {
+                response?.data?.sections?.map(section => {
                     if (section?.sectionType === "playlist") tempPlaylists = [...tempPlaylists, ...section?.items]
                 })
                 setPlaylists(tempPlaylists)
