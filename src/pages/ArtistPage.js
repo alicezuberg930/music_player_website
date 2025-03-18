@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { useParams } from "react-router-dom"
-import { getArtist } from "../services/api_service"
+import { getArtist } from "../services/api.service"
 import { toast } from "react-toastify"
 import { icons } from "../utils/icons"
 import SongItem from "../components/SongItem"

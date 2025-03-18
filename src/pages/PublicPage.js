@@ -16,8 +16,10 @@ const PublicPage = () => {
 
     const handleScrollTop = (e) => {
         if (location.pathname.includes("/artist") || location.pathname.includes("/zing-chart")) {
-            if (e.target.scrollTop === 0) dispatch(isScrollTop(true))
-            else dispatch(isScrollTop(false))
+            if (e.target.scrollTop === 0)
+                dispatch(isScrollTop(true))
+            else
+                dispatch(isScrollTop(false))
         } else {
             dispatch(isScrollTop(false))
         }
@@ -27,7 +29,7 @@ const PublicPage = () => {
         <>
             <div className="w-full h-screen bg-main-300 overflow-hidden">
                 <div className="w-full h-full flex">
-                    <div className="lg:w-[240px] w-[70px] flex-none border bg-main-200">
+                    <div className="lg:w-[180px] w-[70px] flex-none border bg-main-200">
                         <SidebarLeft />
                     </div>
                     <div className="flex-auto flex flex-col relative">
@@ -36,22 +38,19 @@ const PublicPage = () => {
                         </div>
                         <div className="flex-auto w-full h-full overflow-y-scroll" onScroll={handleScrollTop}>
                             <Outlet />
+                            {currentSongId &&
+                                <div className="h-20 sticky bottom-0 left-0 right-0 z-20">
+                                    <Player />
+                                </div>
+                            }
                         </div>
-                        <div className="h-20"></div>
                     </div>
-                    {
-                        showSideBarRight &&
+                    {showSideBarRight &&
                         <div className="animate-slide-left hidden 2xl:block w-[330px] flex-none border-l">
                             <SidebarRight />
                         </div>
                     }
                 </div>
-                {
-                    currentSongId &&
-                    <div className="h-20 fixed bottom-0 left-0 right-0 z-20">
-                        <Player />
-                    </div>
-                }
             </div>
             <ToastContainer />
         </>

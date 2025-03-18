@@ -24,8 +24,8 @@ const appReducer = (state = initState, action) => {
                 newRelease: action.homeData?.find(item => item?.sectionType === "new-release") || {},
                 weekCharts: action.homeData?.find(item => item?.sectionType === "weekChart")?.items || [],
                 favoriteArtists: action.homeData?.find(item => item?.sectionId === "hMix") || {},
-                chart: action.homeData?.find(item => item?.sectionId === "hZC")?.chart || {},
-                ranks: action.homeData?.find(item => item?.sectionId === "hZC")?.items || {},
+                chart: action.homeData?.find(item => item?.sectionId === "hZC")?.chart ?? null,
+                ranks: action.homeData?.find(item => item?.sectionId === "hZC")?.items ?? null,
                 spotLightArtists: action.homeData?.find(item => item?.sectionType === "artistSpotlight")?.items || [],
             }
         case action_types.SHOW_SIDEBAR_RIGHT:

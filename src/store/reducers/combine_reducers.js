@@ -1,12 +1,13 @@
 import { combineReducers } from "redux";
 import appReducer from "./app_reducer";
 import { persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+// import storage from "redux-persist/lib/storage";
+import sessionStorage from "redux-persist/lib/storage/session";
 import autoMergeLevel2 from "redux-persist/lib/stateReconciler/autoMergeLevel2";
 import musicReducer from "./music_reducer";
 
 const config = {
-    storage: storage,
+    storage: sessionStorage,
     stateReconciler: autoMergeLevel2
 }
 

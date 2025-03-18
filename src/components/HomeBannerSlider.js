@@ -114,7 +114,7 @@ const HomeBannerSlider = () => {
                     return (
                         <img key={item.encodeId} src={item.banner} alt="banner"
                             onClick={() => handleClickBanner(item)}
-                            className={`slider-item flex-1 object-contain w-[30%] rounded-lg ${index <= 2 ? 'block' : 'hidden'}`}
+                            className={`slider-item flex-1 object-cover w-1/3 aspect-video rounded-lg ${index <= 2 ? 'block' : 'hidden'}`}
                         />
                     )
                 })

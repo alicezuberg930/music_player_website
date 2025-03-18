@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { getChartHome } from "../services/api_service"
+import { getChartHome } from "../services/api.service"
 import "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { icons } from "../utils/icons";
@@ -86,7 +86,7 @@ const ZingChartPage = () => {
         }
     }
 
-    useEffect(() => {
+    useEffect(() => { 
         fetchChartHome()
         let links = []
         for (let i = 0; i < 3; i++) {

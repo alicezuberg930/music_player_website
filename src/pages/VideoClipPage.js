@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { getVideo } from "../services/api_service"
+import { getVideo } from "../services/api.service"
 import { Link, useParams } from "react-router-dom"
 import { toast } from "react-toastify";
 import { videoDetailsHC } from "../assets/dummy_data";

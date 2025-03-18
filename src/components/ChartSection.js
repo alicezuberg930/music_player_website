@@ -104,7 +104,7 @@ const ChartSection = () => {
                 <div className="flex lg:flex-row flex-col gap-4 h-full">
                     <div className="flex-3 flex flex-col gap-3">
                         {
-                            ranks?.slice(0, 3).map((song, index) => {
+                            ranks && ranks?.slice(0, 3).map((song, index) => {
                                 return (
                                     <SongItem song={song} imgSize="lg" percent={Math.round(song?.score / chart?.totalScore * 100)}
                                         order={index + 1} key={song?.encodeId} style="text-white hover:bg-[#A874B8] bg-[#ffffff12]"

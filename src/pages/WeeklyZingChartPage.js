@@ -3,7 +3,7 @@ import bgWeekChart from "../assets/bg-week-chart.jpg"
 import { icons } from "../utils/icons"
 import { useSelector } from "react-redux"
 import { useEffect, useState } from "react"
-import { getWeekChart } from "../services/api_service"
+import { getWeekChart } from "../services/api.service"
 import { toast } from "react-toastify"
 import RankListCard from "../components/RankListCard"
 

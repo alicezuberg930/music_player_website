@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getArtist } from "../services/api_service"
+import { getArtist } from "../services/api.service"
 import { useSelector } from "react-redux"
 import PlaylistCard from "../components/PlaylistCard"
 import { toast } from "react-toastify"

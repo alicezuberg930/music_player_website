@@ -1,4 +1,4 @@
-import { getHome } from "../../services/api_service.js"
+import { getHome } from "../../services/api.service.js"
 import action_types from "./action_types.js"
 
 export const getHomeAction = () => async (dispatch) => {

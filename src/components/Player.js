@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { getSongDetails, getSongStreaming } from "../services/api_service"
+import { getSongDetails, getSongStreaming } from "../services/api.service"
 import { icons } from "../utils/icons"
 import { playPlaylist, setCurrentSongData, setCurrentSongId, setPlay } from "../store/actions/music_actions"
 import { formatDuration } from "../utils/utils"

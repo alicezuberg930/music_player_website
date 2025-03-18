@@ -1,4 +1,4 @@
-import { getArtistSongs, searchKeyword } from "../../services/api_service"
+import { getArtistSongs, searchKeyword } from "../../services/api.service"
 import action_types from "./action_types"
 
 export const setCurrentSongId = (id) => (dispatch) => {
