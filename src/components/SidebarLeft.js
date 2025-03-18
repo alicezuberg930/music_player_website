@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import logo from "../assets/logo.svg" 
+import logo from "../assets/logo.svg"
 import { sidebarMenu } from "../utils/menu"
 
 const SidebarLeft = () => {
@@ -8,23 +8,25 @@ const SidebarLeft = () => {
     }
 
     return (
-        <div className="h-full flex flex-col ">
-            <div className="w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center">
-                <img src={logo} alt="logo" />
-            </div>
-            <div className="flex flex-col">
-                {
-                    sidebarMenu.map((value, index) => {
-                        return (
-                            <NavLink to={value.path} key={index}
-                                className={({ isActive }) => checkActive(isActive)}
-                            >
-                                {value.icon}
-                                <span className="hidden lg:inline">{value.text}</span>
-                            </NavLink>
-                        )
-                    })
-                }
+        <div className="lg:w-[180px] w-[70px] flex-none border bg-main-200">
+            <div className="h-full flex flex-col ">
+                <div className="w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center">
+                    <img src={logo} alt="logo" />
+                </div>
+                <div className="flex flex-col">
+                    {
+                        sidebarMenu.map((value, index) => {
+                            return (
+                                <NavLink to={value.path} key={index}
+                                    className={({ isActive }) => checkActive(isActive)}
+                                >
+                                    {value.icon}
+                                    <span className="hidden lg:inline">{value.text}</span>
+                                </NavLink>
+                            )
+                        })
+                    }
+                </div>
             </div>
         </div>
     )

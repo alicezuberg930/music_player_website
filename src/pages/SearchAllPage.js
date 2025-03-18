@@ -13,8 +13,7 @@ const SearchAllPage = () => {
             <div className="w-full">
                 <h3 className="text-lg font-bold mb-4">Nổi bật</h3>
                 <div className="flex gap-8 mb-7">
-                    {
-                        searchData?.top &&
+                    {searchData?.top &&
                         <div className="flex-1 p-2 flex gap-8 items-center bg-main-200 rounded-md">
                             <img src={searchData?.top?.thumbnail} className="w-20 h-20 object-cover rounded-full" alt="avatar" />
                             <div className="flex flex-col text-xs">
@@ -74,8 +73,6 @@ const SearchAllPage = () => {
                     }
                 </div>
             </div>
-
-            <div className="h-24"></div>
         </div>
     )
 }

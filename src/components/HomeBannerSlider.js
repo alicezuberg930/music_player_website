@@ -103,7 +103,7 @@ const HomeBannerSlider = () => {
     }, [min, max, isAuto])
 
     return (
-        <div className="flex justify-between gap-4 mt-6 w-full overflow-hidden relative" onMouseLeave={() => setIsAuto(true)}>
+        <div className="flex justify-between gap-4 w-full overflow-hidden relative" onMouseLeave={() => setIsAuto(true)}>
             <button className="rounded-full p-3 z-30 absolute top-1/2 -translate-y-[50%] left-2 bg-[rgba(255,255,255,0.3)] text-white"
                 onClick={() => clickPreviousBanner(1)}
             >

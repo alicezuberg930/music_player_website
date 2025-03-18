@@ -5,8 +5,7 @@ import { persistStore } from "redux-persist";
 
 const reduxConfig = () => {
     const store = createStore(combineReducer, applyMiddleware(thunk))
-    const persist_store = persistStore(store)
-    return { store, persist_store }
+    return { store, persistStore: persistStore(store) }
 }
 
 export default reduxConfig

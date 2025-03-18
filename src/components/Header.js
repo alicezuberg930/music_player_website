@@ -7,7 +7,7 @@ const Header = () => {
     const navigate = useNavigate()
 
     return (
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex items-center justify-between bg-transparent">
             <div className="flex my-2 gap-4 w-full">
                 <div className="flex items-center text-gray-400 gap-6">
                     <HiArrowNarrowLeft onClick={() => navigate(-1)} size={24} />

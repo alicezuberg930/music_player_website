@@ -16,10 +16,8 @@ const PublicPage = () => {
 
     const handleScrollTop = (e) => {
         if (location.pathname.includes("/artist") || location.pathname.includes("/zing-chart")) {
-            if (e.target.scrollTop === 0)
-                dispatch(isScrollTop(true))
-            else
-                dispatch(isScrollTop(false))
+            if (e.target.scrollTop === 0) dispatch(isScrollTop(true))
+            else dispatch(isScrollTop(false))
         } else {
             dispatch(isScrollTop(false))
         }
@@ -29,27 +27,17 @@ const PublicPage = () => {
         <>
             <div className="w-full h-screen bg-main-300 overflow-hidden">
                 <div className="w-full h-full flex">
-                    <div className="lg:w-[180px] w-[70px] flex-none border bg-main-200">
-                        <SidebarLeft />
-                    </div>
-                    <div className="flex-auto flex flex-col relative">
-                        <div className={`flex items-center px-10 h-16 absolute w-full z-50 ${scrollTop ? 'bg-transparent' : 'bg-main-300'}`}>
+                    <SidebarLeft />
+                    <div className="flex-1 flex flex-col relative">
+                        <div className={`flex-none px-10 w-full z-50 bg-transparent ${scrollTop ? 'bg-transparent' : 'bg-main-300'}`}>
                             <Header />
                         </div>
-                        <div className="flex-auto w-full h-full overflow-y-scroll" onScroll={handleScrollTop}>
+                        <div className="flex-auto overflow-y-scroll py-8 px-2 md:px-6" onScroll={handleScrollTop}>
                             <Outlet />
-                            {currentSongId &&
-                                <div className="h-20 sticky bottom-0 left-0 right-0 z-20">
-                                    <Player />
-                                </div>
-                            }
                         </div>
+                        {currentSongId && <Player />}
                     </div>
-                    {showSideBarRight &&
-                        <div className="animate-slide-left hidden 2xl:block w-[330px] flex-none border-l">
-                            <SidebarRight />
-                        </div>
-                    }
+                    {showSideBarRight && <SidebarRight />}
                 </div>
             </div>
             <ToastContainer />

@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from "react"
 import { getVideo } from "../services/api.service"
 import { Link, useParams } from "react-router-dom"
-import { toast } from "react-toastify";
-import { videoDetailsHC } from "../assets/dummy_data";
-import Hls from "hls.js";
-import { icons } from "../utils/icons";
-import { formatDuration } from "../utils/utils";
-import { useDispatch, useSelector } from "react-redux";
-import { setTheater } from "../store/actions/music_actions";
+import { toast } from "react-toastify"
+import { videoDetailsHC } from "../assets/dummy_data"
+import Hls from "hls.js"
+import { icons } from "../utils/icons"
+import { formatDuration } from "../utils/utils"
+import { useDispatch, useSelector } from "react-redux"
+import { setTheater } from "../store/actions/music_actions"
 
 const VideoClipPage = () => {
-    const videoRef = useRef(null);
+    const videoRef = useRef(null)
     const settingsRef = useRef()
     const timelineContainerRef = useRef()
-    const { id } = useParams();
+    const { id } = useParams()
     const [video, setVideo] = useState(null)
     const videoContainer = document.querySelector('.video-container')
     const videoPlayer = document.querySelector('video')
@@ -28,7 +28,6 @@ const VideoClipPage = () => {
     const { screenWidth } = useSelector(state => state.app)
     const displayAmount = isTheater ? (screenWidth <= 1024 ? 4 : 7) : video?.recommends?.length
 
-    console.log(screenWidth);
     const fetchVideo = async () => {
         try {
             const response = await getVideo(id)
@@ -45,9 +44,9 @@ const VideoClipPage = () => {
 
     const initializeVideoPlayer = (url) => {
         if (Hls.isSupported()) {
-            var hls = new Hls();
-            hls.loadSource(url);
-            hls.attachMedia(videoRef?.current);
+            var hls = new Hls()
+            hls.loadSource(url)
+            hls.attachMedia(videoRef?.current)
         }
     }
 
@@ -142,7 +141,7 @@ const VideoClipPage = () => {
         if (videoRef.current) {
             videoRef.current.addEventListener('enterpictureinpicture', () => {
                 videoRef.current.classList.add('mini-player')
-            });
+            })
             videoRef.current.addEventListener('leavepictureinpicture', () => {
                 videoRef.current.classList.remove('mini-player')
             })

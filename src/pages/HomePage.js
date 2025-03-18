@@ -14,8 +14,7 @@ const HomePage = () => {
     return (
         <>
             {playlistsList && weekCharts && newRelease ?
-                <div className="px-10">
-                    <div className="h-16"></div>
+                <div>
                     <HomeBannerSlider />
                     {
                         playlistsList?.map((playlists, i) => {

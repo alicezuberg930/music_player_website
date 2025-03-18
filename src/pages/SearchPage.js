@@ -12,8 +12,7 @@ const SearchPage = () => {
     const { searchData } = useSelector(state => state.music)
 
     useEffect(() => {
-        if (location.state?.keyword.length > 0)
-            dispatch(search(location.state?.keyword))
+        if (location.state?.keyword.length > 0) dispatch(search(location.state?.keyword))
     }, [location.state?.keyword])
 
     useEffect(() => {
@@ -21,17 +20,14 @@ const SearchPage = () => {
     }, [location.state?.keyword])
 
     return (
-        <div className="px-10">
-            <div className="h-16"></div>
-            <div className="flex h-12 mb-7 items-center text-sm border-b border-gray-400">
-                <span className="text-2xl font-bold pr-6 border-r border-gray-400">Kết quả tìm kiếm</span>
+        <>
+            <div className="flex h-12 mb-6 items-center text-sm border-b border-gray-400">
+                <span className="text-2xl font-bold pr-4 border-r border-gray-400">Kết quả tìm kiếm</span>
                 <div className="flex items-center h-full">
                     {
                         searchMenu.map(menu => {
                             return (
-                                <NavLink key={menu.path} to={menu.path}
-                                    className={({ isActive }) => isActive ? normalStyle + activeStyle : normalStyle}
-                                >
+                                <NavLink key={menu.path} to={menu.path} className={({ isActive }) => isActive ? normalStyle + activeStyle : normalStyle}>
                                     {menu.text}
                                 </NavLink>
                             )
@@ -39,10 +35,8 @@ const SearchPage = () => {
                     }
                 </div>
             </div>
-            <div className="h-full">
-                <Outlet />
-            </div>
-        </div>
+            <Outlet />
+        </>
     )
 }
 
