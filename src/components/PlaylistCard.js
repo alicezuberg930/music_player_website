@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom"
 import { icons } from "../utils/icons"
 
-const PlaylistCard = ({ item, sectionId, isSearch }) => {
+const PlaylistCard = ({ item, sectionId, isSearch, visibleSlides = 5 }) => {
     let link = item?.link?.split('.')[0]
     const { BsPlayFill, AiOutlineHeart, BsThreeDots } = icons
     const navigate = useNavigate()
 
     return (
-        <div className={`text-sm flex flex-col lg:w-1/5 w-1/4 gap-3 cursor-pointer px-3 ${isSearch ? 'mb-5' : ''}`}
+        <div className={`text-sm flex flex-col gap-3 cursor-pointer px-3 ${isSearch ? 'mb-5' : ''}`}
             onClick={() => navigate(link, { state: { playAlbum: false } })}
+            style={{ width: `${100 / visibleSlides}%`, flex: '0 0 auto' }}
         >
             <div className="relative w-full group overflow-hidden rounded-lg">
                 <div className="text-white absolute top-0 bottom-0 left-0 right-0 gap-3 bg-overlay z-20 invisible group-hover:visible flex items-center justify-center">

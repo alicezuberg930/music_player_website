@@ -19,8 +19,7 @@ const SearchAllPage = () => {
                             <div className="flex flex-col text-xs">
                                 <span className="mb-1">{searchData?.top?.objectType === "artist" ? 'Nghệ sĩ' : ''}</span>
                                 <span className="text-sm font-semibold">{searchData?.top?.title || searchData?.top?.name}</span>
-                                {
-                                    searchData.top.objectType === "artist" &&
+                                {searchData.top.objectType === "artist" &&
                                     <span>{roundPeopleAmount(searchData?.artists[0]?.totalFollow)} quan tâm</span>
                                 }
                             </div>
@@ -66,9 +65,7 @@ const SearchAllPage = () => {
                 <div className="flex gap-6 mb-7">
                     {
                         searchData?.artists?.slice(0, 5).map((artist) => {
-                            return (
-                                <ArtistCard artist={artist} key={artist?.id} />
-                            )
+                            return <ArtistCard artist={artist} key={artist?.id} />
                         })
                     }
                 </div>

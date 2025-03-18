@@ -8,7 +8,7 @@ const SidebarLeft = () => {
     }
 
     return (
-        <div className="lg:w-[180px] w-[70px] flex-none border bg-main-200">
+        <div className="sm:block hidden lg:w-[180px] w-[70px] flex-none border bg-main-200">
             <div className="h-full flex flex-col ">
                 <div className="w-full h-[70px] py-[15px] px-[25px] flex justify-start items-center">
                     <img src={logo} alt="logo" />

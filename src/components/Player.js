@@ -167,7 +167,7 @@ const Player = () => {
     return (
         <div className="sticky bottom-0 left-0 right-0 z-20">
             <div className="flex justify-between bg-main-400 px-5 py-2">
-                <div className="w-[30%] flex justify-start items-center gap-4">
+                <div className="w-[30%] hidden sm:flex justify-start items-center gap-4">
                     <img src={songDetails?.thumbnailM} alt="thumbnail" className="w-16 h-16 object-cover" />
                     <div className="flex flex-col">
                         <span className="font-semibold text-gray-700 text-sm line-clamp-2 text-ellipsis">{songDetails?.title}</span>
@@ -180,7 +180,7 @@ const Player = () => {
                         <BsThreeDots size={20} />
                     </span>
                 </div>
-                <div className="w-[40%] flex flex-col justify-center items-center gap-4">
+                <div className="w-full sm:w-[40%] flex flex-col justify-center items-center gap-4">
                     <div className="flex gap-8 items-center">
                         <span title="Bật phát ngẫu nhiên" className={`cursor-pointer ${shuffle && 'text-purple-600'}`}>
                             <CiShuffle size={20} onClick={() => setShuffle(!shuffle)} />

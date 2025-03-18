@@ -3,7 +3,7 @@ import VideoCard from "./VideoCard"
 
 const MVSection = ({ videos, thumbnail }) => {
     const { screenWidth } = useSelector(state => state.app)
-    const displayAmount = screenWidth <= 1024 ? 2 : 3
+    const displayAmount = screenWidth <= 640 ? 1 : screenWidth <= 1024 ? 2 : 3
 
     return (
         <div className="mt-12">

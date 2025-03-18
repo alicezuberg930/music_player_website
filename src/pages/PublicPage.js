@@ -32,7 +32,7 @@ const PublicPage = () => {
                         <div className={`flex-none px-10 w-full z-50 bg-transparent ${scrollTop ? 'bg-transparent' : 'bg-main-300'}`}>
                             <Header />
                         </div>
-                        <div className="flex-auto overflow-y-scroll py-8 px-2 md:px-6" onScroll={handleScrollTop}>
+                        <div className="flex-auto overflow-y-scroll overflow-x-hidden py-8 px-2 md:px-6" onScroll={handleScrollTop}>
                             <Outlet />
                         </div>
                         {currentSongId && <Player />}

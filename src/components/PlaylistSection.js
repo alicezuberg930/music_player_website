@@ -3,7 +3,11 @@ import PlaylistCard from "./PlaylistCard"
 
 const PlaylistSection = ({ playlists }) => {
     const { screenWidth } = useSelector(state => state.app)
-    const displayAmount = screenWidth <= 1024 ? 4 : 5
+    let displayAmount = 5
+    if (screenWidth < 1024) displayAmount = 4
+    if (screenWidth < 768) displayAmount = 3
+    if (screenWidth < 640) displayAmount = 2
+    if (screenWidth < 475) displayAmount = 1
 
     return (
         <div className="mt-12">
@@ -15,7 +19,7 @@ const PlaylistSection = ({ playlists }) => {
                 {
                     playlists?.items?.slice(0, displayAmount).map(item => {
                         return (
-                            <PlaylistCard item={item} sectionId={playlists?.sectionId} key={item?.encodeId} />
+                            <PlaylistCard item={item} visibleSlides={displayAmount} sectionId={playlists?.sectionId} key={item?.encodeId} />
                         )
                     })
                 }

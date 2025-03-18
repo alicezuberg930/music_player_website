@@ -7,7 +7,7 @@ const VideoCard = ({ video, thumbnail }) => {
     const link = video.link.split('.')[0]
 
     return (
-        <div className="text-sm flex flex-col lg:w-1/3 w-1/2 gap-3 cursor-pointer px-3">
+        <div className="text-sm flex flex-col w-full gap-3 cursor-pointer px-3">
             <div className="relative w-full group overflow-hidden rounded-lg">
                 <div className="text-white absolute top-0 bottom-0 left-0 right-0 gap-3 bg-overlay z-20 invisible group-hover:visible flex items-center justify-center">
                     <span onClick={(e) => { e.stopPropagation(); navigate(link) }}
