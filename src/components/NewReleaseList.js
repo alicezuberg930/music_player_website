@@ -8,9 +8,9 @@ const NewReleaseList = () => {
     const [songs, setSongs] = useState([])
 
     const setNewReleaseSongs = () => {
-        if (type === -1) setSongs(newRelease.items?.all)
-        if (type === 0) setSongs(newRelease.items?.others)
-        if (type === 1) setSongs(newRelease.items?.vPop)
+        if (type === -1) setSongs(newRelease.items?.all || [])
+        if (type === 0) setSongs(newRelease.items?.others || [])
+        if (type === 1) setSongs(newRelease.items?.vPop || [])
     }
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const NewReleaseList = () => {
             </div>
             <div className="flex flex-wrap w-full mt-5">
                 {
-                    songs.slice(0, 12)?.map(item => {
+                    songs.length > 0 && songs.slice(0, 12)?.map(item => {
                         return (
                             <div key={item?.encodeId} className="md:w-[45%] xl:w-[30%]">
                                 <SongItem song={item} imgSize="lg" showTime={true} />
