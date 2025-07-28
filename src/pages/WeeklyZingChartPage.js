@@ -2,7 +2,7 @@ import { NavLink, useParams } from "react-router-dom"
 import bgWeekChart from "../assets/bg-week-chart.jpg"
 import { icons } from "../utils/icons"
 import { useSelector } from "react-redux"
-import { useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { getWeekChart } from "../services/api.service"
 import { toast } from "react-toastify"
 import RankListCard from "../components/RankListCard"
@@ -15,7 +15,7 @@ const WeeklyZingChartPage = () => {
     const { weekChartLinks } = useSelector(state => state.music)
     const [songs, setSongs] = useState(null)
 
-    const fetchWeekChart = async (week, year) => {
+    const fetchWeekChart = useCallback(async (week, year) => {
         try {
             const response = await getWeekChart(id);
             if (response?.err === 0) {
@@ -26,11 +26,11 @@ const WeeklyZingChartPage = () => {
         } catch (error) {
             toast.warn(error)
         }
-    }
+    }, [id])
 
     useEffect(() => {
         fetchWeekChart()
-    }, [id])
+    }, [id, fetchWeekChart])
 
     return (
         <div className="">

@@ -9,6 +9,7 @@ const initState = {
     currentPlaylistName: null,
     recentSongs: [],
     searchData: null,
+    searchTypeData: null,
     searchSongs: [],
     weekChartLinks: [],
     isTheater: true
@@ -59,7 +60,7 @@ const musicReducer = (state = initState, action) => {
                 ...state,
                 recentSongs: currentSongs
             }
-        case action_types.SEARCH:
+        case action_types.SEARCH_MULTI:
             return {
                 ...state,
                 searchData: action.searchData || {}
@@ -68,6 +69,11 @@ const musicReducer = (state = initState, action) => {
             return {
                 ...state,
                 searchSongs: action.songs || []
+            }
+        case action_types.SEARCH_TYPE:
+            return {
+                ...state,
+                searchTypeData: action.searchTypeData || {}
             }
         case action_types.WEEK_CHART_LINK:
             return {

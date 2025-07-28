@@ -86,14 +86,14 @@ const ZingChartPage = () => {
         }
     }
 
-    useEffect(() => { 
+    useEffect(() => {
         fetchChartHome()
         let links = []
         for (let i = 0; i < 3; i++) {
             links.push(zingChartDataHC?.weekChart[Object.keys(zingChartDataHC?.weekChart)[i]].link)
         }
         dispatch(setWeekChartLink(links))
-    }, [])
+    }, [dispatch])
 
     useEffect(() => {
         const labels = chartData?.RTChart?.chart?.times?.filter(item => +item.hour % 2 === 0)?.map(item => `${item.hour}:00`)

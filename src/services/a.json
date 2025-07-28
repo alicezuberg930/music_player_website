@@ -1,0 +1,25 @@
+{
+    "err": 0,
+    "msg": "Success",
+    "data": {
+        "correctKeyword": null,
+        "items": [
+            {
+                "id": "IWZA6CCW",
+                "name": "Alan Walker",
+                "link": "/Alan-Walker",
+                "spotlight": false,
+                "alias": "Alan-Walker",
+                "thumbnail": "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                "thumbnailM": "https://photo-resize-zmp3.zmdcdn.me/w360_r1x1_jpeg/avatars/b/a/6/b/ba6b56ca02dd06f37693d945acfcdad9.jpg",
+                "isOA": true,
+                "isOABrand": false,
+                "playlistId": "ZWZCU89E",
+                "totalFollow": 1204778
+            }
+        ],
+        "total": 1,
+        "sectionId": "search"
+    },
+    "timestamp": 1753733404847
+}

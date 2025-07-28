@@ -171,7 +171,8 @@ const VideoClipPage = () => {
                 <video id="videoPlayer" className="rounded-md bg-black" width="100%" ref={videoRef} onClick={toggleVideo} tabIndex={0} onKeyDown={videoKeyDown} />
                 <img className="thumbnail-img" alt="thumbnail-img" />
                 <div className="px-2 absolute bottom-0 left-0 right-0 video-controls-container">
-                    <div className="timeline-container h-2 rounded-full cursor-pointer flex items-center" ref={timelineContainerRef}>
+                    <div className="timeline-container h-2 rounded-full cursor-poin
+                    ter flex items-center" ref={timelineContainerRef}>
                         <div className="timeline">
                             <img className="preview-img" alt="preview-img" src={video?.thumbnail} />
                             <div className="thumb-indicator"></div>

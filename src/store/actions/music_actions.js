@@ -1,4 +1,4 @@
-import { getArtistSongs, searchKeyword } from "../../services/api.service"
+import { getArtistSongs, searchMulti, searchType } from "../../services/api.service"
 import action_types from "./action_types"
 
 export const setCurrentSongId = (id) => (dispatch) => {
@@ -29,16 +29,29 @@ export const addRecentSong = (recentSong) => async (dispatch) => {
     dispatch({ type: action_types.ADD_RECENT_SONG, recentSong })
 }
 
-export const search = (keyword) => async (dispatch) => {
+export const searchMultiAction = (keyword) => async (dispatch) => {
     try {
-        const response = await searchKeyword(keyword)
+        const response = await searchMulti(keyword)
         if (response?.err === 0) {
-            dispatch({ type: action_types.SEARCH, searchData: response?.data })
+            dispatch({ type: action_types.SEARCH_MULTI, searchData: response?.data })
         } else {
-            dispatch({ type: action_types.SEARCH, searchData: null })
+            dispatch({ type: action_types.SEARCH_MULTI, searchData: null })
         }
     } catch (error) {
         dispatch({ type: action_types.SEARCH, searchData: null })
+    }
+}
+
+export const searchTypeAction = (keyword, type, page = 1, count = 30) => async (dispatch) => {
+    try {
+        const response = await searchType(keyword, type, page, count)
+        if (response?.err === 0) {
+            dispatch({ type: action_types.SEARCH_TYPE, searchTypeData: response?.data })
+        } else {
+            dispatch({ type: action_types.SEARCH_TYPE, searchTypeData: null })
+        }
+    } catch (error) {
+        dispatch({ type: action_types.SEARCH_TYPE, searchTypeData: null })
     }
 }
 

@@ -11,7 +11,7 @@ const SearchBar = () => {
 
     const handleSubmit = (e) => {
         if (e.code === "Enter" && e.target.value.length > 2) {
-            navigate(`search/all`, { state: { keyword: e.target.value } })
+            navigate({ pathname: "search/all", search: "?q=" + e.target.value }, { state: { keyword: e.target.value } });
         }
     }
 

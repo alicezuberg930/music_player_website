@@ -1,48 +1,26 @@
-import { useEffect, useState } from "react"
-import { getArtist } from "../services/api.service"
-import { useSelector } from "react-redux"
-import PlaylistCard from "../components/PlaylistCard"
-import { toast } from "react-toastify"
+import { useDispatch, useSelector } from 'react-redux'
+import { useSearchParams } from 'react-router-dom'
+import { searchTypeAction } from '../store/actions/music_actions'
+import { useEffect } from 'react'
+import PlaylistCard from '../components/PlaylistCard'
 
 const SearchPlaylistPage = () => {
-    const [playlists, setPlaylists] = useState([])
-    const { searchData } = useSelector(state => state.music)
-
-    const fetchPlaylist = async () => {
-        try {
-            let tempPlaylists = []
-            let response = await getArtist(searchData?.top?.alias)
-            if (response.err === 0) {
-                response?.data?.sections?.map(section => {
-                    if (section?.sectionType === "playlist") tempPlaylists = [...tempPlaylists, ...section?.items]
-                })
-                setPlaylists(tempPlaylists)
-            } else {
-                toast.warn(response.msg)
-            }
-        } catch (error) {
-            toast.warn(error)
-        }
-    }
+    const { searchTypeData } = useSelector(state => state.music)
+    const dispatch = useDispatch()
+    const [searchParams] = useSearchParams()
+    const q = searchParams.get('q')
 
     useEffect(() => {
-        fetchPlaylist()
-    }, [])
+        if (q.length > 0) dispatch(searchTypeAction(q, 'playlist'))
+    }, [q, dispatch])
 
     return (
-        <div className="mt-7">
-            {/* <div className="flex items-center justify-between mb-5"> */}
-            <h3 className="text-xl font-bold mb-4">Playlist/album</h3>
-            {/* <span className="text-xs uppercase">Tất cả</span> */}
-            {/* </div> */}
-            <div className="flex flex-wrap -mx-2">
-                {
-                    playlists && playlists?.map(playlist => {
-                        return (
-                            <PlaylistCard item={playlist} key={playlists?.id} sectionId="h100" isSearch={true} />
-                        )
-                    })
-                }
+        <div className='w-full'>
+            <h3 className='text-xl font-bold mb-4'>Danh sách phát/album</h3>
+            <div className='flex flex-wrap -mx-2'>
+                {searchTypeData && searchTypeData.items?.map(playlist => (
+                    <PlaylistCard item={playlist} key={playlist?.encodeId} sectionId='h100' isSearch={true} />
+                ))}
             </div>
         </div>
     )

@@ -36,9 +36,18 @@ export const getDetailsPlaylist = async (id) => {
     }
 }
 
-export const searchKeyword = async (keyword) => {
+export const searchMulti = async (keyword) => {
     try {
         let response = await instance({ url: "/search/multi", method: "get", params: { query: keyword } })
+        return response.data
+    } catch (error) {
+        return error
+    }
+}
+
+export const searchType = async (keyword, type, page = 1, count = 30) => {
+    try {
+        let response = await instance({ url: "/search", method: "get", params: { query: keyword, type, page, count } })
         return response.data
     } catch (error) {
         return error
