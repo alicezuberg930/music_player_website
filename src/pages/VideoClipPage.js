@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react"
 import { getVideo } from "../services/api.service"
 import { Link, useParams } from "react-router-dom"
 import { toast } from "react-toastify"
-import { videoDetailsHC } from "../assets/dummy_data"
 import Hls from "hls.js"
 import { icons } from "../utils/icons"
 import { formatDuration } from "../utils/utils"
@@ -166,9 +165,9 @@ const VideoClipPage = () => {
     }, [volume])
 
     return (
-        <div className={`all-container w-full bg-purple-950 ${isTheater ? 'h-fit' : 'h-screen flex justify-between px-5'} py-10 gap-6`}>
+        <div className={`all-container w-full bg-purple-950 py-10 gap-6 ${isTheater ? 'h-fit' : 'h-screen flex justify-between px-5'}`}>
             <div className={`video-container relative h-fit ${isTheater ? 'w-full' : 'w-3/4'}`}>
-                <video id="videoPlayer" className="rounded-md bg-black" width="100%" ref={videoRef} onClick={toggleVideo} tabIndex={0} onKeyDown={videoKeyDown} />
+                <video id="videoPlayer" className="rounded-md bg-black outline-none" width="100%" ref={videoRef} onClick={toggleVideo} tabIndex={0} onKeyDown={videoKeyDown} />
                 <img className="thumbnail-img" alt="thumbnail-img" />
                 <div className="px-2 absolute bottom-0 left-0 right-0 video-controls-container">
                     <div className="timeline-container h-2 rounded-full cursor-poin
@@ -179,11 +178,11 @@ const VideoClipPage = () => {
                         </div>
                     </div>
                     <div className="relative flex items-center text-white py-1 px-3 gap-3">
-                        {
-                            isPlaying ?
-                                <span onClick={toggleVideo}><BsPauseFill size={40} /></span> :
-                                <span onClick={toggleVideo}><BsPlayFill size={40} /></span>
-                        }
+                        {isPlaying ? (
+                            <span onClick={toggleVideo}><BsPauseFill size={40} /></span>
+                        ) : (
+                            <span onClick={toggleVideo}><BsPlayFill size={40} /></span>
+                        )}
                         <div className="flex items-center group gap-2">
                             <span onClick={muteAudio}>
                                 {(volume < 50 && volume > 0) && <SlVolume1 size={30} />}

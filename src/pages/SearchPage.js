@@ -7,7 +7,6 @@ const SearchPage = () => {
     const [searchParams] = useSearchParams()
     const q = searchParams.get('q')
 
-    // const { searchData } = useSelector(state => state.music)
     // useEffect(() => {
     //     dispatch(getSearchSongs(searchData?.top?.id))
     // }, [q, searchData?.top?.id, dispatch])

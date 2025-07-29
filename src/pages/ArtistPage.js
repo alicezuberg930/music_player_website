@@ -97,7 +97,7 @@ const ArtistPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
+            <div className="w-full">
                 {
                     artist?.sections?.filter(i => i.sectionType === "playlist")?.map(playlists => {
                         return (
@@ -106,7 +106,7 @@ const ArtistPage = () => {
                     })
                 }
             </div>
-            <div className="">
+            <div className="w-full">
                 <MVSection thumbnail={artist?.thumbnail} videos={artist?.sections?.find(i => i.sectionType === "video")} />
             </div>
             <div className="mt-12">
