@@ -29,7 +29,7 @@ const PublicPage = () => {
                 <div className="w-full h-full flex">
                     <SidebarLeft />
                     <div className="flex-1 flex flex-col relative">
-                        <div className={`flex-none px-10 w-full z-50 bg-transparent ${scrollTop ? 'bg-transparent' : 'bg-main-300'}`}>
+                        <div className={`fixed top-0 right-0 xl:right-[330px] left-0 sm:left-[70px] lg:left-[180px] flex-none px-10 py-1 backdrop-blur-md z-50 ${scrollTop ? 'bg-transparent' : 'bg-[rgba(23,15,35,0.8)]'}`}>
                             <Header />
                         </div>
                         <div className="flex-auto overflow-y-scroll overflow-x-hidden py-8 px-2 md:px-6" onScroll={handleScrollTop}>

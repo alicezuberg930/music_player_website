@@ -1,31 +1,52 @@
-import { useNavigate } from "react-router-dom";
-import { icons } from "../utils/icons";
+import { NavLink } from 'react-router-dom'
+import { icons } from '../utils/icons'
+import { formatDuration } from '../utils/utils'
 
-const VideoCard = ({ video, thumbnail }) => {
-    const navigate = useNavigate()
+const VideoCard = ({ video, variant = 'horizontal' }) => {
     const { BsPlayFill } = icons
-    const link = video.link.split('.')[0]
 
     return (
-        <div className="text-sm flex flex-col w-full gap-3 cursor-pointer px-3">
-            <div className="relative w-full group overflow-hidden rounded-lg">
-                <div className="text-white absolute top-0 bottom-0 left-0 right-0 gap-3 bg-overlay z-20 invisible group-hover:visible flex items-center justify-center">
-                    <span onClick={(e) => { e.stopPropagation(); navigate(link) }}
-                        className="p-1 border border-white rounded-full"
-                    >
-                        <BsPlayFill size={35} />
-                    </span>
+        variant === 'horizontal' ? (
+            <NavLink to={video?.link.split('.')[0]} className='relative group' key={video?.encodeId}>
+                <div className='relative aspect-video rounded-md overflow-hidden mb-3'>
+                    <img src={video?.thumbnailM} alt={video?.title} className='w-full h-full object-cover rounded-md mb-2 group-hover:scale-110 transition-all' />
+                    {/* Duration */}
+                    <div className='absolute bottom-1 right-1 bg-[rgba(0,0,0,.7)] py-1 px-1.5 rounded-md'>
+                        <p className='text-xs text-white'>{formatDuration(video?.duration)}</p>
+                    </div>
+                    {/* Overlay */}
+                    <div className='absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-all duration-300 top-0 left-0 right-0 bottom-0 flex items-center justify-center'>
+                        <BsPlayFill size={64} fill='white' />
+                    </div>
                 </div>
-                <img src={video?.thumbnailM} alt={video?.encodeId} className="w-full z-10 group-hover:animate-scale-up-center object-contain" />
-            </div>
-            <div className="flex gap-3">
-                <img src={thumbnail} className="h-10 w-10 rounded-full" />
-                <div>
-                    <span className="font-semibold line-clamp-1">{video?.title}</span>
-                    <span className="line-clamp-2 text-gray-500">{video?.artistsNames}</span>
+                <div className='flex gap-2 items-center'>
+                    <img src={video?.artist?.thumbnail} alt={video?.artist?.name} className='w-10 h-10 object-cover rounded-full' />
+                    <div className='flex-1'>
+                        <h4 className='text-sm font-semibold'>{video?.title}</h4>
+                        {video?.artists?.map((artist, i) => (
+                            <NavLink className='text-xs text-gray-500' to={`/artist${artist?.link}`} key={artist?.id}>
+                                {artist?.name + (i < video?.artists?.length - 1 ? ', ' : '')}
+                            </NavLink>
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </div >
+            </NavLink>
+        ) : (
+            // <div className={`flex ${isTheater ? 'flex-col flex-1' : 'hover:bg-[#ffffff0d]'} py-1 items-center gap-2 px-4`}>
+            //     <img src={item?.thumbnail} className={`${isTheater ? 'w-full h-28' : 'w-32 h-16'} object-cover rounded-md`} />
+            //     <div className="block w-full">
+            //         <span className="line-clamp-1 font-bold text-sm">{item?.title}</span>
+            //         <span className="line-clamp-1 font-semibold text-xs text-[rgba(255,255,255,0.4)]">
+            //             {item?.artists?.map((artist, i) => (
+            //                 <Link to={`/artist/${artist.alias}`} key={i}>
+            //                     {`${artist.name}${i < item.artists.length - 1 ? ', ' : ''}`}
+            //                 </Link>
+            //             ))}
+            //         </span>
+            //     </div>
+            // </div>
+            <></>
+        )
     )
 }
 

@@ -9,7 +9,7 @@ const SidebarRight = () => {
     const { currentSongData, songs, currentPlaylistName, recentSongs } = useSelector(state => state.music)
 
     return (
-        <div className="animate-slide-left hidden 2xl:block w-[330px] flex-none border-l">
+        <div className="animate-slide-left hidden xl:block w-[330px] flex-none border-l">
             <div className="flex flex-col text-xs w-full h-full">
                 <div className="h-16 flex-none py-3 flex items-center justify-between px-2 gap-8" >
                     <div className="flex flex-auto bg-main-200 rounded-full p-1 cursor-pointer">

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { getVideo } from "../services/api.service"
-import { Link, useParams } from "react-router-dom"
+import { Link, NavLink, useParams } from "react-router-dom"
 import { toast } from "react-toastify"
 import Hls from "hls.js"
 import { icons } from "../utils/icons"
@@ -197,13 +197,17 @@ const VideoClipPage = () => {
                             <span>{formatDuration(video?.duration)}</span>
                         </div>
                         <IoMdSettings size={30} onClick={displaySettings} />
-                        {
-                            !isFullscreen && <span onClick={toggleTheaterMode}>
+                        {!isFullscreen && (
+                            <span onClick={toggleTheaterMode}>
                                 <LuRectangleHorizontal size={30} />
                             </span>
-                        }
+                        )}
                         <span onClick={toggleFullScreen}>
-                            {isFullscreen ? <MdOutlineFullscreenExit size={30} /> : <MdFullscreen size={30} />}
+                            {isFullscreen ? (
+                                <MdOutlineFullscreenExit size={30} />
+                            ) : (
+                                <MdFullscreen size={30} />
+                            )}
                         </span>
                         <span onClick={togglePictureInPicture}>
                             <MdPictureInPicture size={30} />
@@ -247,33 +251,24 @@ const VideoClipPage = () => {
                 <div className="p-4">
                     <span className="font-bold text-lg">Danh sách phát</span>
                 </div>
-                <div className={`${isTheater ? 'flex' : ''}`}>
-                    {
-                        video?.recommends?.slice(0, displayAmount).map(item => {
-                            return (
-                                <div key={item?.encodeId}
-                                    className={`flex ${isTheater ? 'flex-col flex-1' : 'hover:bg-[#ffffff0d]'} py-1 items-center gap-2 px-4`}
-                                >
-                                    <img src={item?.thumbnail} className={`${isTheater ? 'w-full h-28' : 'w-32 h-16'} object-cover rounded-md`} />
-                                    <div className="block w-full">
-                                        <span className="line-clamp-1 font-bold text-sm">{item?.title}</span>
-                                        <span className="line-clamp-1 font-semibold text-xs text-[rgba(255,255,255,0.4)]">
-                                            {
-                                                item?.artists?.map((artist, i) => {
-                                                    let link = `/artist/${artist.alias}`
-                                                    return (
-                                                        <Link to={link} key={link}>
-                                                            {`${artist.name}${i < item.artists.length - 1 ? ', ' : ''}`}
-                                                        </Link>
-                                                    )
-                                                })
-                                            }
-                                        </span>
-                                    </div>
+                <div className={`${isTheater && 'overflow-x-auto whitespace-nowrap thin-scrollbar'} mx-4`}>
+                    {video?.recommends?.map(item => (
+                        <div key={item?.encodeId} className={`${isTheater && 'last:mr-0 mr-4 w-[330px] inline-block'} py-2`}>
+                            <NavLink to={item?.link.split('.')[0]} className={`${isTheater && 'flex-col'} flex gap-2 items-center hover:bg-[#ffffff0d]`}>
+                                <img src={item?.thumbnail} className={`${isTheater ? 'aspect-video w-full' : 'w-32 h-16'} object-cover rounded-md`} />
+                                <div className="w-full">
+                                    <span className="line-clamp-1 font-bold text-sm">{item?.title}</span>
+                                    <span className="line-clamp-1 font-semibold text-xs text-[rgba(255,255,255,0.4)]">
+                                        {item?.artists?.map((artist, i) => (
+                                            <Link to={`/artist/${artist.alias}`} key={i}>
+                                                {`${artist.name}${i < item.artists.length - 1 && ', '}`}
+                                            </Link>
+                                        ))}
+                                    </span>
                                 </div>
-                            )
-                        })
-                    }
+                            </NavLink>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

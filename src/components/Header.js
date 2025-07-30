@@ -13,9 +13,7 @@ const Header = () => {
                     <HiArrowNarrowLeft onClick={() => navigate(-1)} size={24} />
                     <HiArrowNarrowRight onClick={() => navigate(1)} size={24} />
                 </div>
-                <div className="w-1/2">
-                    <SearchBar />
-                </div>
+                <SearchBar />
             </div>
             <div>login</div>
         </div>

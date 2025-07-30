@@ -9,6 +9,7 @@ import { RotatingLines } from "react-loader-spinner"
 import { setShowSideBarRight } from "../store/actions/home_actions"
 
 let thumbInterval
+
 const Player = () => {
     const [volume, setVolume] = useState(50)
     const [audio, setAudio] = useState(new Audio())
@@ -89,23 +90,13 @@ const Player = () => {
         audio.play()
     }
 
-    // On video playing toggle values
-    audio.onplaying = () => {
-        dispatch(setPlay(true))
-    }
+    // const playAudio = async () => {
+    //     if (audio.paused && !isPlaying) audio.play()
+    // }
 
-    // On video pause toggle values
-    audio.onpause = () => {
-        dispatch(setPlay(false))
-    }
-
-    async function playAudio() {
-        if (audio.paused && !isPlaying) return audio.play()
-    }
-
-    function pauseAudio() {
-        if (!audio.paused && isPlaying) audio.pause()
-    }
+    // const pauseAudio = async () => {
+    //     if (!audio.paused && isPlaying) audio.pause()
+    // }
 
     const getSong = async (id) => {
         try {
@@ -137,6 +128,18 @@ const Player = () => {
     useEffect(() => {
         getSong(currentSongId)
     }, [currentSongId])
+
+    useEffect(() => {
+        // On video playing toggle values
+        audio.onplaying = () => {
+            dispatch(setPlay(true))
+        }
+
+        // On video pause toggle values
+        audio.onpause = () => {
+            dispatch(setPlay(false))
+        }
+    }, [])
 
     useEffect(() => {
         thumbInterval && clearInterval(thumbInterval)
@@ -194,7 +197,9 @@ const Player = () => {
                         <span className={`${atPlaylist > 0 ? 'cursor-pointer' : 'text-gray-500'}`}>
                             <MdSkipNext size={20} onClick={handleClickNext} />
                         </span>
-                        <span title="Phát lại tất cả bài hát" className={`cursor-pointer ${repeatMode && 'text-purple-600'}`}
+                        <span
+                            title="Phát lại tất cả bài hát"
+                            className={`cursor-pointer ${repeatMode && 'text-purple-600'}`}
                             onClick={() => setRepeatMode(repeatMode === 2 ? 0 : repeatMode + 1)}
                         >
                             {repeatMode === 1 ? <TbRepeatOnce size={20} /> : <CiRepeat size={20} />}
