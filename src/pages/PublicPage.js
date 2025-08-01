@@ -4,7 +4,6 @@ import SidebarRight from "../components/SidebarRight"
 import Player from "../components/Player"
 import Header from "../components/Header"
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch, useSelector } from "react-redux"
 import { isScrollTop } from "../store/actions/home_actions"
 

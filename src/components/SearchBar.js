@@ -18,8 +18,8 @@ const SearchBar = () => {
 
     return (
         <div className='max-w-[440px] w-full'>
-            <div className='bg-[hsla(0,0%,100%,0.1)] text-gray-500 rounded-2xl flex items-center' >
-                <div className='flex'>
+            <div className='bg-[hsla(0,0%,100%,0.1)] text-gray-500 rounded-3xl flex items-center'>
+                <div className='flex w-full'>
                     <span className='pl-4 self-center'>
                         <FiSearch size={24} />
                     </span>
