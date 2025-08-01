@@ -16,8 +16,11 @@ const PublicPage = () => {
 
     const handleScrollTop = (e) => {
         if (location.pathname.includes("/artist") || location.pathname.includes("/zing-chart")) {
-            if (e.target.scrollTop === 0) dispatch(isScrollTop(true))
-            else dispatch(isScrollTop(false))
+            if (e.target.scrollTop === 0) {
+                dispatch(isScrollTop(true))
+            } else {
+                dispatch(isScrollTop(false))
+            }
         } else {
             dispatch(isScrollTop(false))
         }
@@ -32,7 +35,7 @@ const PublicPage = () => {
                         <div className={`fixed top-0 right-0 xl:right-[330px] left-0 sm:left-[70px] lg:left-[180px] flex-none px-10 py-1 backdrop-blur-md z-50 ${scrollTop ? 'bg-transparent' : 'bg-[rgba(23,15,35,0.8)]'}`}>
                             <Header />
                         </div>
-                        <div className="flex-auto overflow-y-scroll overflow-x-hidden py-8 px-2 md:px-6" onScroll={handleScrollTop}>
+                        <div className="flex-auto overflow-y-scroll overflow-x-hidden py-20 px-2 md:px-6" onScroll={handleScrollTop}>
                             <Outlet />
                         </div>
                         {currentSongId && <Player />}

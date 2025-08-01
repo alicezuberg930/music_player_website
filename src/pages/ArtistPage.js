@@ -38,7 +38,7 @@ const ArtistPage = () => {
 
     return (
         <div className='flex flex-col w-full'>
-            <div ref={ref} className='h-[300px] relative -mx-2 md:-mx-6 -mt-8'>
+            <div ref={ref} className='h-[300px] relative -mx-2 md:-mx-6 -mt-20'>
                 <div className='absolute w-full h-full bg-no-repeat bg-cover bg-center blur-xl' style={{ backgroundImage: `url(${artist?.thumbnailM})` }}></div>
                 <div className='px-2 sm:px-10 absolute w-full h-full bg-[#291547b3] text-white'>
                     <div className='absolute bottom-0 pb-6 flex flex-col sm:flex-row gap-4'>
