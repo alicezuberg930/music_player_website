@@ -18,7 +18,7 @@ const SearchArtistPage = () => {
         <div className='w-full'>
             <h3 className='text-xl font-bold mb-4'>Tác giả</h3>
             <div className='flex flex-wrap -mx-2'>
-                {searchTypeData && searchTypeData.items?.map(artist => (
+                {searchTypeData?.items?.map(artist => (
                     <ArtistCard artist={artist} key={artist?.id} />
                 ))}
             </div>

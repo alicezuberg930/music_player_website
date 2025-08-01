@@ -1,3 +1,4 @@
+import "chart.js/auto";
 import { memo, useEffect, useRef, useState } from "react"
 import { useSelector } from "react-redux"
 import SongItem from "../components/SongItem.js"
@@ -5,7 +6,6 @@ import { deepObjectComparison } from "../utils/utils.js";
 import { Link } from "react-router-dom";
 import { paths } from '../utils/global_paths';
 import { icons } from "../utils/icons.js";
-import "chart.js/auto";
 import { Line } from "react-chartjs-2";
 
 const ChartSection = () => {

@@ -4,7 +4,6 @@ import { formatDuration } from "../utils/utils"
 import { useDispatch, useSelector } from "react-redux"
 import { addRecentSong, playPlaylist, setCurrentPlaylistName, setCurrentSongId, setPlay, setPlaylistSongs } from "../store/actions/music_actions"
 
-
 const SongCard = ({ song, playlistTitle, songs, hideAlbum, order }) => {
     const dispatch = useDispatch()
     const { BsMusicNoteBeamed } = icons
@@ -22,12 +21,11 @@ const SongCard = ({ song, playlistTitle, songs, hideAlbum, order }) => {
     return (
         <div onClick={handleSongClick} className="flex justify-between items-center p-2 border-t border-[rgba(0,0,0,0.05)] hover:bg-[#DDE4E4] cursor-pointer">
             <div className="flex w-[45%] items-center justify-start gap-2">
-                {
-                    order &&
+                {order && (
                     <div className={`w-1/12 flex justify-center text-3xl px-1 text-[#33104cf2] ${orderCss}`}>
                         {order}
                     </div>
-                }
+                )}
                 {!order && <span><BsMusicNoteBeamed size={16} /></span>}
                 <img src={song?.thumbnailM} alt="thumbnail" className="w-10 h-10 object-cover rounded-md" />
                 <div className="flex flex-col whitespace-nowrap w-3/4">
@@ -35,12 +33,11 @@ const SongCard = ({ song, playlistTitle, songs, hideAlbum, order }) => {
                     <span className="text-xs text-ellipsis overflow-hidden">{song?.artistsNames}</span>
                 </div>
             </div>
-            {
-                !hideAlbum &&
+            {!hideAlbum && (
                 <div className="flex w-[45%] justify-start font-semibold whitespace-nowrap text-xs text-gray-500">
                     <span className="text-ellipsis overflow-hidden">{song?.album?.title}</span>
                 </div>
-            }
+            )}
             <div className="flex w-[10%] justify-end text-xs font-semibold opacity-70">
                 {formatDuration(song?.duration)}
             </div>

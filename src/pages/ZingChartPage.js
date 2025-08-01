@@ -1,6 +1,6 @@
+import "chart.js/auto";
 import { useEffect, useRef, useState } from "react"
 import { getChartHome } from "../services/api.service"
-import "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { icons } from "../utils/icons";
 import { deepObjectComparison } from "../utils/utils";
